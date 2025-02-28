@@ -184,41 +184,10 @@ export const Header = () => {
                             // window.localStorage.getItem("token") === null ||
                             !isLogin ? (
                             <>
-                                <div>
-                                    <input
-                                        type="text"
-                                        value={searchItem}
-                                        onChange={handleInputChange}
-                                        placeholder='Type to search'
-                                    />
-                                </div>
-                                <Link to={"/THAI/ALL"}>
-                                    <div className="hidden lg:flex gap-2 py-[14px] px-[24px] cursor-pointer hover:bg-[var(--bgColors)]">
-                                        <img
-                                            width={28}
-                                            height={28}
-                                            src={Cards}
-                                            alt="Thai"
-                                        />
-                                        <span className="text-[var(--secondaryColor)] leading-[28px]">
-                                            {t("Thai")}
-                                        </span>
-                                    </div>
-                                </Link>
+                               
+                               
 
-                                <Link to={"/ESPORTS/ALL"}>
-                                    <div className="hidden lg:flex gap-2 py-[14px] px-[24px] cursor-pointer hover:bg-[var(--bgColors)]">
-                                        <img
-                                            width={28}
-                                            height={28}
-                                            src={SoccerBall}
-                                            alt="Sports"
-                                        />
-                                        <span className="text-[var(--secondaryColor)]  leading-[28px]">
-                                            {t("Sports")}
-                                        </span>
-                                    </div>
-                                </Link>
+                               
 
                                 <Link to={"/LIVE/ALL"}>
                                     <div className="hidden lg:flex gap-2 py-[14px] px-[24px] cursor-pointer hover:bg-[var(--bgColors)]">
@@ -226,27 +195,15 @@ export const Header = () => {
                                             width={28}
                                             height={28}
                                             src={EventTicket}
-                                            alt="Casino"
+                                            alt="Live"
                                         />
                                         <span className="text-[var(--secondaryColor)]  leading-[28px]">
-                                            {t("Casino")}
+                                            {t("Live Games")}
                                         </span>
                                     </div>
                                 </Link>
 
-                                {/* <Link to={"/BINGO/ALL"}>
-                                        <div className="hidden lg:flex gap-2 py-[14px] px-[24px] cursor-pointer hover:bg-[#7f7f7f30]">
-                                            <img
-                                                width={28}
-                                                height={28}
-                                                src={Horse}
-                                                alt="Bingo"
-                                            />
-                                            <span className="text-[#903489] leading-[28px]">
-                                                Bingo
-                                            </span>
-                                        </div>
-                                    </Link> */}
+                              
 
                                 <button
                                     className="bg-transparent text-[var(--secondaryColor)] flex rounded justify-center items-center leading-[28px] py-[6px] px-[15px] md:px-[38px] border-2 border-[var(--secondaryColor)] on-mobile-views-login"
@@ -269,16 +226,7 @@ export const Header = () => {
                                     {/* <img src={signUp} alt='sign Up' className='mr-2' /> */}
                                     {t("Sign Up")}
                                 </button>
-                                <button
-                                    className="bg-transparent text-[var(--secondaryColor)] flex rounded justify-center items-center leading-[28px] py-[6px] px-[15px] md:px-[38px] border-2 border-[var(--secondaryColor)] on-mobile-views-login"
-                                    onClick={() => {
-                                        setOpen(true);
-                                        setType("promote");
-                                    }}
-                                >
-                                    {/* <img src={signUp} alt='sign Up' className='mr-2' /> */}
-                                    {t("Promote")}
-                                </button>
+                              
 
                                 {/* <span className="mx-4 w-8 h-8">
                                     <img

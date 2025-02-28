@@ -131,42 +131,8 @@ export const Footer = () => {
             Logo: logo15,
             Url: "",
         },
-        {
-            Logo: logo16,
-            Url: "",
-        },
-        {
-            Logo: logo17,
-            Url: "",
-        },
-        {
-            Logo: logo18,
-            Url: "",
-        },
-        {
-            Logo: logo19,
-            Url: "",
-        },
-        {
-            Logo: logo20,
-            Url: "",
-        },
-        {
-            Logo: logo22,
-            Url: "",
-        },
-        {
-            Logo: logo24,
-            Url: "",
-        },
-        {
-            Logo: logo25,
-            Url: "",
-        },
-        {
-            Logo: logo28,
-            Url: "",
-        },
+       
+        
     ];
 
     const signUp = () => {
@@ -180,45 +146,39 @@ export const Footer = () => {
             <footer className={`pt-16 mt-5`}>
                 {/* <div className='content-footer-area px-3 md:px-3 max-w-[1430px] mx-auto'> */}
                 <div className="content-footer-area px-3 md:px-8 mx-auto footers py-8">
-                    <div className="why-area grid lg:grid-cols-2 gap-6 lg:gap-36">
+                    <div className="why-area grid lg:grid-cols-1 gap-6 lg:gap-6">
                         <div className="left-area-footer-why">
-                            <h1 className="font-bold">{t("Why Lucky8?")}</h1>
-                            <div className="space-y-3">
-                                <p className="mt-4">{t("The Widest Selection of Games. At Lucky8, we believe that variety is the spice of life. Whether you're a fan of casino games, a sports betting enthusiast, or simply looking for new challenges, we've got you covered. Our gaming hub is constantly updated with the latest and greatest offerings, from card games and slot machines, to competitive sports betting, and more!")}</p>
-                                {/* <p className="">{t("Interested in elevating your gaming and earning experience? LuckyGao is offering you a golden opportunity you don't want to miss. Join our affiliate program and earn incredible commissions, up to a staggering 60%, along with enticing incentives and cashback rewards!")}</p> */}
-                            </div>
-                            <div className="left-area mt-5">
-                                {/* <a href='/'>
-              <img src={logo} alt='' />
-            </a> */}
-                                <div>
-                                    {/* <a href='/'> */}
-                                    {/* <img src={logo} alt='logo' /> */}
-                                    <h1 className="text-black font-bold text-[18px] mb-5">
+                            
+                            <div>
+                               
+                                
+                                   
+                                    <h1 className="text-black font-bold flex items-center justify-center text-[18px] mb-5">
                                         <a
                                             href="/"
 
                                         >
-                                            Lucky8
+                                           Welcome To Lucky8
                                         </a>
                                     </h1>
 
-                                    {/* </a> */}
-                                </div>
-                                <p >{t("Welcome to Lucky8")}</p>
+                                   
+                            
+                                
                                 <p>{t("We're not just another name in the online gaming world; we represent the future of entertainment. We bring you a fantastic mix of casino games, sports betting, and a variety of other interactive experiences—all powered by the revolutionary Web3 technology. With LuckyGao, we invite you on a gaming adventure that's both exciting and thrilling, offering an absolute blend of fun and the joy of winning!")}</p>
                             </div>
                             <div className="right-area mt-5">
-                                <h1 className="text-black font-bold mb-5">{t("So what?")}</h1>
-                                <p>{t("Join Lucky8")}</p>
+                                
+                                <p className="text-black font-bold flex items-center justify-center mb-5">{t("Join Lucky8")}</p>
                             </div >
                             {!isLogin &&
+                            <p className="flex items-center justify-center">
                             <button className="bg-black text-[var(--logoutBg)] mt-5 font-bold py-2 px-4 rounded" onClick={() => signUp()}>
                                 Join Now
-                            </button>}
+                            </button></p>}
                         </div>
 
-                        <div className="right-area-footer-why ">
+                        <div className="right-area-footer ">
                             {/* <h1 className="text-black font-bold">{t("Help us")}</h1>
                         <textarea
                             name=""
@@ -228,15 +188,10 @@ export const Footer = () => {
                             placeholder={t("Found a bug!")}
                             className="w-full h-32 mt-4 mb-7 rounded-lg resize-none px-4 py-3 text-black"
                         /> */}
-                            <div className="mb-8">
+                            {/* <div className="mb-8">
                                 <h1 className="mb-4 font-bold">{t("Join Our Community")}</h1>
                                 <div className="flex items-center gap-3 social-icons-footer">
-                                    <a href="/">
-                                        <img src={share} alt="share icon" />
-                                    </a>
-                                    <a href="/">
-                                        <img src={github} alt="github icon" />
-                                    </a>
+                                  
                                     <a href="/">
                                         <img src={twitter} alt="twitter icon" />
                                     </a>
@@ -246,61 +201,25 @@ export const Footer = () => {
                                     <a href="/">
                                         <img src={discord} alt="discord icon" />
                                     </a>
-                                    <a href="/">
-                                        <img src={bitcoin} alt="bitcoin icon" />
-                                    </a>
+                                    
                                 </div>
-                            </div>
-                            <div className="flex lg:flex-row flex-col justify-between item-center gap-3">
-                                {/* <div className="submit">
-                                <h1 className="text-black font-bold mb-3">{t("Leave a Message")}</h1>
-                                <a className="text-base mb-0">{t("Now get")}</a>
                             </div> */}
+                           
+                              
                                 <div>
-                                    <h1 className="text-black font-bold mb-3">{t("Or Email us")}</h1>
-                                    <p>
+                                    <h1 className="text-black font-bold flex items-center justify-center mb-3">{t("Email us")}</h1>
+                                    <p className="text-black font-bold flex items-center justify-center mb-3">
                                         <a
-                                            href="mailto:ama777.community@gmail.com"
+                                            href="mailto:lucky8@gmail.com"
                                             className="text-black text-base mb-0"
                                         >
-                                            ama777.community@gmail.com
+                                            lucky8@gmail.com
                                         </a>
                                     </p>
 
                                 </div>
-                            </div>
-                            <div className="flex item-center gap-24 list-area-footer mt-8">
-                                <ul>
-                                    <li className="head">{t("About us")}</li>
-                                    <li>
-                                        <a href="/">{t("News")}</a>
-                                    </li>
-                                    {/* <li>
-              <a href='/'>{t("Work With Us")}</a>
-            </li>
-            <li>
-              <a href='/'>{t("Business Contacts")}</a>
-            </li> */}
-                                    <li>
-                                        <a href="/">{t("Help Desk")}</a>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li className="head">{t("Support / Legal")}</li>
-                                    {/* <li>
-              <a href='/'>{t("Help canter")}</a>
-            </li> */}
-                                    {/* <li>
-                                    <a href="/">{t("Gamble Aware")}</a>
-                                </li>
-                                <li>
-                                    <a href="/">{t("Famines")}</a>
-                                </li> */}
-                                    <li>
-                                        <a href="/">{t("Privacy policy")}</a>
-                                    </li>
-                                </ul>
-                            </div>
+                           
+                         
                         </div>
                     </div>
                     {/* 
@@ -324,70 +243,13 @@ export const Footer = () => {
                         </li>
                     </ul>
 
-                    <ul>
-                        <li className="head">{t("Sports")}</li>
-                        <li>
-                            <a href="/">{t("Home")}</a>
-                        </li>
-                        <li>
-                            <a href="/">{t("Live")}</a>
-                        </li>
-                        <li>
-                            <a href="/">{t("Rules")}</a>
-                        </li>
-                        <li>
-                            <a href="/">{t("Leve betting")}</a>
-                        </li>
-                    </ul>
-
-                    <ul>
-                        <li className="head">{t("Promo")}</li>
-                        <li>
-                            <a href="/">{t("VIP Club")}</a>
-                        </li>
-                        <li>
-                            <a href="/">{t("Affiliate")}</a>
-                        </li>
-                        <li>
-                            <a href="/">{t("Lottery")}</a>
-                        </li>
-                        <li>
-                            <a href="/">{t("Refer a friend")}</a>
-                        </li>
-                    </ul>
+                  
+                    
 
 
                 </div> */}
 
-                    <div className="icons-wrapper mt-8">
-                        <div className="flex items-center justify-center">
-                            <h1 className="text-black font-bold mb-5 !text-[18px]">Accepted Networks</h1>
-                            {/* <a href='/'>View All</a> */}
-                        </div>
-
-                        <div className="slider-area flex justify-center gap-8">
-                            <Splide
-                                className=" SliderAreaFirst w-full  !flex !justify-center !gap-6"
-                                options={{
-                                    autoWidth: true,
-                                    gap: 30,
-                                    arrows: false,
-                                    pagination: false,
-                                }}
-                            >
-                                {iconsArray.map((EachArray, key) => (
-                                    <SplideSlide key={key} className="!mx-4 !flex !justify-center">
-                                        <img
-                                            src={EachArray}
-                                            className="w-12 h-12"
-                                            alt={`slider icon ${key + 1}`}
-                                        />
-                                    </SplideSlide>
-                                ))}
-                            </Splide>
-                        </div>
-                    </div>
-
+                   
                     <div className=" mt-12">
                         <h1 className="text-black font-bold mb-5 flex items-center justify-center text-[18px]">Top Providers</h1>
                         <div className="icons-wrapper flex flex-wrap gap-9 justify-center">
@@ -403,29 +265,11 @@ export const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="cols-footer-area grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-14">
-                        <div className="col">
-                            <h1 className="text-black font-bold text-[18px] mb-5">{t("Why Choose Lucky8 Affiliate Program?")}</h1>
-                            <p>
-                                <span>{t("Highest Commissions")}:</span>{" "}
-                                {t("Earn up to")}
-                            </p>
-                        </div>
+                   
 
-                        <div className="col">
-                            <h1 className="text-black font-bold text-[18px] mb-5">{t("Incentives & Cash-backs")}</h1>
-                            <p>{t("In addition to")}</p>
-                        </div>
-
-                        <div className="col">
-                            <h1 className="text-black font-bold text-[18px] mb-5">{t("Earn While You Play")}</h1>
-                            <p>{t("Transform your")}</p>
-                        </div>
-                    </div>
-
-                    <div className="copyright-area mt-20 pb-4 flex flex-col sm:flex-row gap-4 items-center justify-between mt-8">
-                        <p>© 2024 Lucky8. {t("All rights reserved")}</p>
-                        <p>{t("Privacy Policy")}</p>
+                    <div className="copyright-area mt-20  flex items-center justify-center mt-8">
+                        <p>© 2025 Lucky8. {t("All rights reserved")} | Privacy Policy | Terms & Conditions</p>
+                       
                     </div>
                 </div>
             </footer>

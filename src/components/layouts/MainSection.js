@@ -58,7 +58,7 @@ export const MainSection = () => {
                             element={<Navigate to="/ESPORTS/ALL" replace />}
                         />
                         <Route path="/promotion" element={<Promotion />} />
-                        <Route path="/vip" element={<VIP />} />
+                        {/* <Route path="/vip" element={<VIP />} /> */}
                         <Route path="/support" element={<Support />} />
                         <Route
                             path="/financial-report"
@@ -66,7 +66,7 @@ export const MainSection = () => {
                         />
                         <Route path="/account" element={<Account />} />
                         <Route path="/mybet" element={<MyBet />} />
-                        <Route path="/announce" element={<Announce />} />
+                        {/* <Route path="/announce" element={<Announce />} /> */}
                     </Routes>
                 </div>
             </div>

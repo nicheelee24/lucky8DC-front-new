@@ -88,29 +88,29 @@ export const Aside = () => {
         langRef.current?.scrollIntoView({ behavior: "smooth" });
     }, [isLang]);
 
-    const getPromotions = useCallback(async () => {
-        try {
-            const res = await API.getAllPromotions(true);
-            if (res?.data?.promotionsList) {
-                setPromotionItems(res?.data?.promotionsList);
-            }
-        } catch (error) {
-            console.error("Error while fetching promotions:", error);
-        }
-    },[]);
+    // const getPromotions = useCallback(async () => {
+    //     try {
+    //         const res = await API.getAllPromotions(true);
+    //         if (res?.data?.promotionsList) {
+    //             setPromotionItems(res?.data?.promotionsList);
+    //         }
+    //     } catch (error) {
+    //         console.error("Error while fetching promotions:", error);
+    //     }
+    // },[]);
 
-    useEffect(() => {
-        if(userInfo && userInfo?.promotionId && promotionItems && promotionItems.length){
-            try {
-                const filteredPromotions = promotionItems?.find(
-                    (promo) => promo._id === userInfo?.promotionId
-                );
-                setIdWisePromotion(filteredPromotions);
-            } catch (error) {
-                console.error("Error while fetching promotions:", error);
-            }
-        }
-    }, [userInfo,promotionItems,isLogin]);
+    // useEffect(() => {
+    //     if(userInfo && userInfo?.promotionId && promotionItems && promotionItems.length){
+    //         try {
+    //             const filteredPromotions = promotionItems?.find(
+    //                 (promo) => promo._id === userInfo?.promotionId
+    //             );
+    //             setIdWisePromotion(filteredPromotions);
+    //         } catch (error) {
+    //             console.error("Error while fetching promotions:", error);
+    //         }
+    //     }
+    // }, [userInfo,promotionItems,isLogin]);
 
     useEffect(() => {
         if(isLogin){
@@ -125,17 +125,17 @@ export const Aside = () => {
 		}
 	}, [])
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                await getPromotions();
-            } catch (error) {
-                console.error("Error fetching data:", error);
-            }
-        };
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         try {
+    //             await getPromotions();
+    //         } catch (error) {
+    //             console.error("Error fetching data:", error);
+    //         }
+    //     };
     
-        fetchData();
-    }, []);
+    //     fetchData();
+    // }, []);
     
     const registerList = [
         {
@@ -200,10 +200,10 @@ export const Aside = () => {
     ];
 
     const supportList = [
-        {
-            Text: t("Promotion"),
-            Type: "Promotion",
-        },
+        // {
+        //     Text: t("Promotion"),
+        //     Type: "Promotion",
+        // },
         // {
         //   Text: t('VIP'),
         //   Type: 'VIP'

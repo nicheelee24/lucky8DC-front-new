@@ -38,37 +38,37 @@ export const GameTypeList = () => {
     const { gameType } = useParams();
 
     useEffect(() => {
-        switch (gameType) {
-            case "SLOT":
-                setItems(Slot);
-                break;
-            case "LIVE":
-                setItems(LiveCasino);
-                break;
-            case "TABLE":
-                setItems(Table);
-                break;
-            case "ESPORTS":
-                setItems(Sport);
-                break;
-            case "EGAME":
-                setItems(EGame);
-                break;
-            case "FH":
-                setItems(FishingGame);
-                break;
-            case "THAI":
-                setItems(Thai);
-                break;
-            // case "LOTTO":
-            //     setItems(Lotto);
-            //     break;
-            case "BINGO":
-                break;
-            case "VIRTUAL":
-                setItems(Virtual);
-                break;
-        }
+        // switch (gameType) {
+        //     case "SLOT":
+        //         setItems(Slot);
+        //         break;
+        //     case "LIVE":
+        //         setItems(LiveCasino);
+        //         break;
+        //     case "TABLE":
+        //         setItems(Table);
+        //         break;
+        //     case "ESPORTS":
+        //         setItems(Sport);
+        //         break;
+        //     case "EGAME":
+        //         setItems(EGame);
+        //         break;
+        //     case "FH":
+        //         setItems(FishingGame);
+        //         break;
+        //     case "THAI":
+        //         setItems(Thai);
+        //         break;
+        //     // case "LOTTO":
+        //     //     setItems(Lotto);
+        //     //     break;
+        //     case "BINGO":
+        //         break;
+        //     case "VIRTUAL":
+        //         setItems(Virtual);
+        //         break;
+        // }
     }, [gameType]);
 
     const notifyLogin = () =>
