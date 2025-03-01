@@ -299,7 +299,7 @@ export const Aside = () => {
                                 className={`${expandMenuState ? "" : "hidden"
                                     }`}
                             >
-                                <a href="/" className="flex justify-center items-center">
+                                <a href="/ALL/BGaming" className="flex justify-center items-center">
                                     <img
                                         src={LuckyGaoLogo}
                                         alt="logo"
@@ -340,8 +340,8 @@ export const Aside = () => {
                                 : "hidden"
                                 } `}
                         >
-                            {/* Game List */}
-                            {gameListLeft.map((item, index) => {
+                            
+                            {/* {gameListLeft.map((item, index) => {
                                 return (
                                     <>
                                         {(isValueInArray(item.Type) || !isLogin) ?
@@ -355,7 +355,7 @@ export const Aside = () => {
                                         : null}
                                    </>
                                 );
-                            })}
+                            })} */}
 
                             {supportList.map((item, index) => {
                                 return (

@@ -41,7 +41,7 @@ import logo10 from "../../assets/img/Logo/bprint.png";
 import logo11 from "../../assets/img/Logo/Hacksaw Logo/Hacksaw_Logo_Black.png";
 import logo12 from "../../assets/img/Logo/peter.png";
 import logo13 from "../../assets/img/Logo/sa.png";
-import logo14 from "../../assets/img/Logo/ygg.png";
+import logo14 from "../../assets/img/Logo/luckyy.jpeg";
 import logo15 from "../../assets/img/Logo/peter.png";
 import logo16 from "../../assets/img/Logo/logo1.png";
 import logo17 from "../../assets/img/Logo/logo8.png";
@@ -148,10 +148,11 @@ export const Footer = () => {
                                 
                                    
                                     <h1 className="text-black flex items-center justify-center text-[30px] mb-5">
-                                        <a
-                                            href="/" style={{"fontWeight":"bolder"}}
+                                    <img width={"40px"}  src={logo14}></img><a 
+                                            href="/" style={{"fontWeight":"bolder","margin-left":"10px"}}
 
                                         >
+                                            
                                            Lucky8online.com
                                         </a>
                                     </h1>
