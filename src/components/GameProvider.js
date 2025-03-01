@@ -75,11 +75,11 @@ export const GameProvider = (props) => {
             Url: "",
             platform: "Blueprint",
         },
-        {
-            Logo: push,
-            Url: "",
-            platform: "Push Gaming",
-        },
+        // {
+        //     Logo: push,
+        //     Url: "",
+        //     platform: "Push Gaming",
+        // },
         {
             Logo: ezugi,
             Url: "",
@@ -90,11 +90,11 @@ export const GameProvider = (props) => {
             Url: "",
             platform: "Fantasma Games",
         },
-        {
-            Logo: luckymonaco,
-            Url: "",
-            platform: "Lucky Monaco",
-        },
+        // {
+        //     Logo: luckymonaco,
+        //     Url: "",
+        //     platform: "Lucky Monaco",
+        // },
         {
             Logo: novo,
             Url: "",
@@ -105,11 +105,11 @@ export const GameProvider = (props) => {
             Url: "",
             platform: "7Mojos",
         },
-        {
-            Logo: logo24,
-            Url: "",
-            platform: "Play'n GO",
-        },
+        // {
+        //     Logo: logo24,
+        //     Url: "",
+        //     platform: "Play'n GO",
+        // },
         {
             Logo: logo27,
             Url: "",
@@ -130,11 +130,11 @@ export const GameProvider = (props) => {
             Url: "",
             platform: "Peter Sons",
         },
-        {
-            Logo: winfast,
-            Url: "",
-            platform: "Win Fast",
-        },
+        // {
+        //     Logo: winfast,
+        //     Url: "",
+        //     platform: "Win Fast",
+        // },
         {
             Logo: logo20,
             Url: "",
@@ -160,11 +160,11 @@ export const GameProvider = (props) => {
             Url: "",
             platform: "Nolimit City",
         },
-        {
-            Logo: sexyBaccarat,
-            Url: "",
-            platform: "ParlayBay",
-        },
+        // {
+        //     Logo: sexyBaccarat,
+        //     Url: "",
+        //     platform: "ParlayBay",
+        // },
         {
             Logo: evolution,
             Url: "",
@@ -186,21 +186,21 @@ export const GameProvider = (props) => {
             Url: "",
             platform: "Turbo Games (Asia)",
         },
-        {
-            Logo: logo26,
-            Url: "",
-            platform: "SmartSoft",
-        },
+        // {
+        //     Logo: logo26,
+        //     Url: "",
+        //     platform: "SmartSoft",
+        // },
         {
             Logo: netent,
             Url: "",
             platform: "NetEnt",
         },
-        {
-            Logo: gamo,
-            Url: "",
-            platform: "Gamomat",
-        },
+        // {
+        //     Logo: gamo,
+        //     Url: "",
+        //     platform: "Gamomat",
+        // },
        
        
        

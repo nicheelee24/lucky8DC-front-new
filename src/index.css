@@ -464,7 +464,8 @@ footer .left-area-footer-why h1,
 footer .logo-footer-area h1,
 footer .cols-footer-area h1 {
     color: black;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 2000;
     font-family: "Arabic Pro Medium";
     line-height: 21.6px;
     word-wrap: break-word;
@@ -474,10 +475,11 @@ footer .left-area-footer-why p,
 footer .logo-footer-area p,
 footer .cols-footer-area p {
     color: black;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "Arabic Pro Reg";
-    line-height: 18.2px;
+    line-height: 28.2px;
     word-wrap: break-word;
+    font-weight: bold;
 }
 
 footer .left-area-footer-why h2 {
@@ -485,12 +487,13 @@ footer .left-area-footer-why h2 {
     font-size: 16px;
     font-family: "Arabic Pro Medium";
     line-height: 20px;
+    font-weight: bold;
     word-wrap: break-word;
 }
 
 footer .right-area-footer-why h1 {
     color: black;
-    font-size: 18px;
+    font-size: 20px;
     font-family: "Arabic Pro Medium";
     line-height: 21.6px;
     word-wrap: break-word;
@@ -564,8 +567,8 @@ footer .cols-footer-area p span {
 
 footer .copyright-area p {
     color: black;
-    font-size: 16px;
-    font-family: "Arabic Pro Reg";
+    font-size: 12px;
+    font-family: "Arial";
     line-height: 19.2px;
     word-wrap: break-word;
 }
