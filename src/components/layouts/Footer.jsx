@@ -97,31 +97,31 @@ export const Footer = () => {
         },
         {
             Logo: logo5,
-            Url: "",
+            Url: "../ALL/7Mojos",
         },
         {
             Logo: logo7,
-            Url: "",
+            Url: "../ALL/AvatarUX",
         },
         {
             Logo: logo8,
-            Url: "",
+            Url: "../ALL/Octoplay",
         },
         {
             Logo: logo10,
-            Url: "",
+            Url: "../ALL/Blueprint",
         },
         {
             Logo: logo11,
-            Url: "",
+            Url: "../ALL/Hacksaw Gaming",
         },
         {
             Logo: logo12,
-            Url: "",
+            Url: "../ALL/Peter Sons",
         },
         {
             Logo: logo13,
-            Url: "",
+            Url: "../ALL/SA Gaming",
         },
       
        
