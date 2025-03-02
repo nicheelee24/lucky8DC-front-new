@@ -321,7 +321,7 @@ export const Header = () => {
                                         </span>
 
                                         <div className="flex gap-2 items-center">
-                                            <span className="text-white text-sm md:text-lg" style={{ marginLeft: "-18px" }}>{"Balance: "}
+                                            <span className="text-white text-sm md:text-lg" style={{ marginLeft: "6px" }}>{"Balance: "}
                                                 {loadingBalance
                                                     ? "..."
                                                     : balance.toFixed(2) +
