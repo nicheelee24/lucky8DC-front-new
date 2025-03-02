@@ -65,6 +65,8 @@ import promotion_hover from "../assets/img/new_design/aside/promotion.svg";
 import vip from "../assets/img/aside/vip.png";
 import support from "../assets/img/aside/Support.svg";
 
+import bets from "../assets/img/aside/roulette.svg";
+
 import lang from "../assets/img/new_design/aside/language.svg";
 import lang_hover from "../assets/img/new_design/aside/language.svg";
 
@@ -179,30 +181,30 @@ export const GetIcon = ({ type, active }) => {
                 break;
             case "ContactUs":
                 if (active) {
-                    setIcon(promotion_hover);
+                    setIcon(support);
                 } else {
-                    setIcon(promotion);
+                    setIcon(support);
                 }
                 break;
             case "FinancialReport":
                 if (active) {
-                    setIcon(promotion_hover);
+                    setIcon(bets);
                 } else {
-                    setIcon(promotion);
+                    setIcon(bets);
                 }
                 break;
             case "Account":
                 if (active) {
-                    setIcon(promotion_hover);
+                    setIcon(bets);
                 } else {
-                    setIcon(promotion);
+                    setIcon(bets);
                 }
                 break;
             case "MyBetList":
                 if (active) {
-                    setIcon(promotion_hover);
+                    setIcon(bets);
                 } else {
-                    setIcon(promotion);
+                    setIcon(bets);
                 }
                 break;
             case "Announce":
