@@ -213,29 +213,33 @@ export const Aside = () => {
         //     Type: "Support",
         // },
         {
-            Text: t("Contact Us"),
+            Text: t("Profile"),
+            Type: "Account",
+        },
+        {
+            Text: t("My Bets"),
+            Type: "MyBetList",
+        },
+       
+        {
+            Text: t("Transactions"),
+            Type: "FinancialReport",
+        },
+        {
+            Text: t("Support"),
             Type: "ContactUs",
         },
         // {
         //   Text: t('Language'),
         //   Type: 'Language'
         // }
-        {
-            Text: t("Financial Report"),
-            Type: "FinancialReport",
-        },
-        {
-            Text: t("Account"),
-            Type: "Account",
-        },
-        {
-            Text: t("My Bet List"),
-            Type: "MyBetList",
-        },
-        {
-            Text: t("Announce"),
-            Type: "Announce",
-        },
+       
+       
+       
+        // {
+        //     Text: t("Announce"),
+        //     Type: "Announce",
+        // },
     ];
 
     const handleIsLang = (e) => {

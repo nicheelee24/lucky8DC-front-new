@@ -135,7 +135,7 @@ export const Account = () => {
         <div className="max-w-[1200px] m-auto w-full mt-[30px] px-4 md:px-0">
             <div className="flex justify-between items-center mb-4">
                 <h1 className="text-lg text-[var(--secondaryColor)] font-semibold">
-                    Account
+                    Profile
                 </h1>
                 <div className="flex items-center">
                     {/* <input type="date" className="border p-1 rounded mr-2" defaultValue={fromDate}/>
@@ -151,7 +151,7 @@ export const Account = () => {
                 <div className="flex flex-col md:flex-row w-full text-sm text-left gap-6">
                     <div className="w-full md:w-1/2">
                         <h3 className="text-lg text-white border-[var(--logoutBg)] border-b-[4px] mb-4 font-bold">
-                            Profile
+                            Account Details
                         </h3>
 
                         <div className="flex gap-8">
