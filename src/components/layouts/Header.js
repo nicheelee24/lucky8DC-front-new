@@ -285,6 +285,25 @@ export const Header = () => {
                                         </div>
                                     )}
                                 </div>
+                                <div className="relative inline-block">
+                                        <ReactFlagsSelect
+                                            selected={country}
+                                            onSelect={onCountrySelect}
+                                            countries={["CN", "HK"]}
+                                            showSelectedLabel={false}
+                                            showOptionLabel={false}
+                                        /*showSelectedLabel={showSelectedLabel}
+                                        selectedSize={selectedSize}
+                                        showOptionLabel={showOptionLabel}
+                                        optionsSize={optionsSize}
+                                        placeholder={placeholder}
+                                        searchable={searchable}
+                                        searchPlaceholder={searchPlaceholder}
+                                        alignOptionsToRight={alignOptionsToRight}
+                                        fullWidth={fullWidth}
+                                        disabled={disabled} */
+                                        />
+                                    </div>
 
                             </>
                         ) : (
