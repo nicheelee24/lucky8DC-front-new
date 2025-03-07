@@ -5,16 +5,16 @@ import { GameList } from "../GameList";
 import { GameProvider } from "../GameProvider";
 
 export const Game = () => {
-    const { gameType, platform } = useParams();
+  const { gameType, platform } = useParams();
 
-    return (
-        <div className="px-1 sm:px-3 pt-6 flex flex-col">
-            {/* <NavBar /> */}
-            <GameProvider />
-            <span className="text-[var(--textPrimaryColor)]">
-                From {gameType} / {platform}
-            </span>
-            <GameList />
-        </div>
-    );
+  return (
+    <div className="px-1 sm:px-3 pt-6 flex flex-col">
+      {/* <NavBar /> */}
+      <GameProvider />
+      <span className="text-md text-[var(--textPrimaryColor)]">
+        From {gameType} / {platform}
+      </span>
+      <GameList />
+    </div>
+  );
 };
