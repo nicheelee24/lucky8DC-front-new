@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
+
 import logo8 from "../assets/img/Logo/logo4.png";
 import logo16 from "../assets/img/Logo/avatr.png";
 import logo20 from "../assets/img/Logo/Hacksaw Logo/Hacksaw_Logo_White.png";
@@ -38,236 +39,243 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { useNavigate } from "react-router";
 
 export const GameProvider = (props) => {
-  const { t } = useTranslation();
+    const { t } = useTranslation();
 
-  const navigation = useNavigate();
+    const navigation = useNavigate();
 
-  const Logos = [
-    {
-      Logo: bg,
-      Url: "",
-      platform: "BGaming"
-    },
-    {
-      Logo: evollution,
-      Url: "",
-      platform: "Evolution"
-    },
-    {
-      Logo: octo,
-      Url: "",
-      platform: "Octoplay"
-    },
-    {
-      Logo: thunder,
-      Url: "",
-      platform: "Thunder Kick"
-    },
-    {
-      Logo: btg,
-      Url: "",
-      platform: "BigTime Gaming"
-    },
-    {
-      Logo: blueprint,
-      Url: "",
-      platform: "Blueprint"
-    },
-    // {
-    //     Logo: push,
-    //     Url: "",
-    //     platform: "Push Gaming",
-    // },
-    {
-      Logo: ezugi,
-      Url: "",
-      platform: "Ezugi"
-    },
-    {
-      Logo: fnta,
-      Url: "",
-      platform: "Fantasma Games"
-    },
-    // {
-    //     Logo: luckymonaco,
-    //     Url: "",
-    //     platform: "Lucky Monaco",
-    // },
-    {
-      Logo: novo,
-      Url: "",
-      platform: "Novomatic"
-    },
-    {
-      Logo: mojos,
-      Url: "",
-      platform: "7Mojos"
-    },
-    // {
-    //     Logo: logo24,
-    //     Url: "",
-    //     platform: "Play'n GO",
-    // },
-    {
-      Logo: logo27,
-      Url: "",
-      platform: "Evoplay"
-    },
-    {
-      Logo: yolted,
-      Url: "",
-      platform: "Yolted"
-    },
-    {
-      Logo: logo16,
-      Url: "",
-      platform: "AvatarUX"
-    },
-    {
-      Logo: logo29,
-      Url: "",
-      platform: "Peter Sons"
-    },
-    // {
-    //     Logo: winfast,
-    //     Url: "",
-    //     platform: "Win Fast",
-    // },
-    {
-      Logo: logo20,
-      Url: "",
-      platform: "Hacksaw Gaming"
-    },
-    {
-      Logo: redtiger,
-      Url: "",
-      platform: "Red Tiger"
-    },
-    {
-      Logo: sa,
-      Url: "",
-      platform: "SA Gaming"
-    },
-    {
-      Logo: logo28,
-      Url: "",
-      platform: "FunTa Gaming"
-    },
-    {
-      Logo: logo22,
-      Url: "",
-      platform: "Nolimit City"
-    },
-    // {
-    //     Logo: sexyBaccarat,
-    //     Url: "",
-    //     platform: "ParlayBay",
-    // },
-    {
-      Logo: evolution,
-      Url: "",
-      platform: "Relax Gaming"
-    },
-    {
-      Logo: playngo,
-      Url: "",
-      platform: "Slotmill"
-    },
-    {
-      Logo: ygg,
-      Url: "",
-      platform: "Yggdrasil Gaming"
-    },
+    const Logos = [
 
-    {
-      Logo: logo25,
-      Url: "",
-      platform: "Turbo Games (Asia)"
-    },
-    // {
-    //     Logo: logo26,
-    //     Url: "",
-    //     platform: "SmartSoft",
-    // },
-    {
-      Logo: netent,
-      Url: "",
-      platform: "NetEnt"
-    }
-    // {
-    //     Logo: gamo,
-    //     Url: "",
-    //     platform: "Gamomat",
-    // },
-  ];
+        {
+            Logo: bg,
+            Url: "",
+            platform: "BGaming",
+        },
+        {
+            Logo: evollution,
+            Url: "",
+            platform: "Evolution",
+        },
+        {
+            Logo: octo,
+            Url: "",
+            platform: "Octoplay",
+        },
+        {
+            Logo: thunder,
+            Url: "",
+            platform: "Thunder Kick",
+        },
+        {
+            Logo: btg,
+            Url: "",
+            platform: "BigTime Gaming",
+        },
+        {
+            Logo: blueprint,
+            Url: "",
+            platform: "Blueprint",
+        },
+        // {
+        //     Logo: push,
+        //     Url: "",
+        //     platform: "Push Gaming",
+        // },
+        {
+            Logo: ezugi,
+            Url: "",
+            platform: "Ezugi",
+        },
+        {
+            Logo: fnta,
+            Url: "",
+            platform: "Fantasma Games",
+        },
+        // {
+        //     Logo: luckymonaco,
+        //     Url: "",
+        //     platform: "Lucky Monaco",
+        // },
+        {
+            Logo: novo,
+            Url: "",
+            platform: "Novomatic",
+        },
+        {
+            Logo: mojos,
+            Url: "",
+            platform: "7Mojos",
+        },
+        // {
+        //     Logo: logo24,
+        //     Url: "",
+        //     platform: "Play'n GO",
+        // },
+        {
+            Logo: logo27,
+            Url: "",
+            platform: "Evoplay",
+        },
+        {
+            Logo: yolted,
+            Url: "",
+            platform: "Yolted",
+        },
+        {
+            Logo: logo16,
+            Url: "",
+            platform: "AvatarUX",
+        },
+        {
+            Logo: logo29,
+            Url: "",
+            platform: "Peter Sons",
+        },
+        // {
+        //     Logo: winfast,
+        //     Url: "",
+        //     platform: "Win Fast",
+        // },
+        {
+            Logo: logo20,
+            Url: "",
+            platform: "Hacksaw Gaming",
+        },
+        {
+            Logo: redtiger,
+            Url: "",
+            platform: "Red Tiger",
+        },
+        {
+            Logo: sa,
+            Url: "",
+            platform: "SA Gaming",
+        },
+        {
+            Logo: logo28,
+            Url: "",
+            platform: "FunTa Gaming",
+        },
+        {
+            Logo: logo22,
+            Url: "",
+            platform: "Nolimit City",
+        },
+        // {
+        //     Logo: sexyBaccarat,
+        //     Url: "",
+        //     platform: "ParlayBay",
+        // },
+        {
+            Logo: evolution,
+            Url: "",
+            platform: "Relax Gaming",
+        },
+        {
+            Logo: playngo,
+            Url: "",
+            platform: "Slotmill",
+        },
+        {
+            Logo: ygg,
+            Url: "",
+            platform: "Yggdrasil Gaming",
+        },
+       
+        {
+            Logo: logo25,
+            Url: "",
+            platform: "Turbo Games (Asia)",
+        },
+        // {
+        //     Logo: logo26,
+        //     Url: "",
+        //     platform: "SmartSoft",
+        // },
+        {
+            Logo: netent,
+            Url: "",
+            platform: "NetEnt",
+        },
+        // {
+        //     Logo: gamo,
+        //     Url: "",
+        //     platform: "Gamomat",
+        // },
+       
+       
+       
+       
+    ];
 
-  return (
-    <div className="icons-wrapper md:mt-7 sm:mt-7 mt-7 text-white">
-      <div className="top items-center justify-between mb-6">
-        <h1 className="text-[var(--secondaryColor)] items-center text-center lg:text-left md:text-left sm:text-left text-2xl md:text-xl sm:text-xl lg:text-white md:text-white sm:text-white font-bold">
-          {t("Providers")}
-        </h1>
-        {/* <a className='see-all' href='/'>{t("View All")}</a> */}
-      </div>
-      <div className="slider-area w-full">
-        <Splide
-          className="mb-5 SliderAreaFirst"
-          options={{
-            gap: 15,
-            arrows: false,
-            pagination: false,
-            perPage: 8,
-            breakpoints: {
-              500: {
-                perPage: 2,
-                gap: 5
-              },
-              770: {
-                perPage: 2
-              },
-              970: {
-                perPage: 3
-              },
-              1200: {
-                perPage: 4
-              },
-              1400: {
-                perPage: 5
-              },
-              1600: {
-                perPage: 6
-              }
-            }
-          }}
-        >
-          {Logos.map((item, index) => (
-            <SplideSlide
-              key={index}
-              onClick={() =>
-                navigation(`/ALL/${item.platform}`, {
-                  replace: true
-                })
-              }
-              className="rounded-lg cursor-pointer"
-            >
-              <div
-                className={`card cursor-pointer ${
-                  props.direction ? "rounded-full" : "rounded-lg"
-                }`}
-              >
-                <div className="w-full h-[99px] lg:h-[30px] md:h-[30px] sm:h-[30px] py-6 md:h-[62px] overflow-hidden rounded-lg flex items-center bg-[var(--newBgProvider)]">
-                  <img
-                    key={index}
-                    src={item.Logo}
-                    alt="Logo"
-                    className="w-[80%] mx-auto"
-                  />
-                </div>
-              </div>
-            </SplideSlide>
-          ))}
-        </Splide>
-      </div>
-    </div>
-  );
+    return (
+        <div className="icons-wrapper md:mt-7 text-white">
+            <div className="top flex items-center justify-between mb-6">
+                <h1 className="flex items-center text-sm md:text-xl text-white font-bold">
+                    {t("Providers")}
+                </h1>
+                {/* <a className='see-all' href='/'>{t("View All")}</a> */}
+            </div>
+            <div className="slider-area w-full">
+                <Splide
+                    className="mb-5 SliderAreaFirst"
+                    options={{
+                        gap: 15,
+                        arrows: false,
+                        pagination: false,
+                        perPage: 8,
+                        breakpoints: {
+                            500: {
+                                perPage: 3,
+                                gap: 5,
+                            },
+                            770: {
+                                perPage: 3,
+                            },
+                            970: {
+                                perPage: 3,
+                            },
+                            1200: {
+                                perPage: 4,
+                            },
+                            1400: {
+                                perPage: 5,
+                            },
+                            1600: {
+                                perPage: 6,
+                            },
+                        },
+                    }}
+                >
+                    {Logos.map((item, index) => (
+                        <SplideSlide
+                            key={index}
+                            onClick={() =>
+                                navigation(`/ALL/${item.platform}`, {
+                                    replace: true,
+                                })
+                            }
+                            className="rounded-lg cursor-pointer"
+                        >
+                            <div
+                                className={`card cursor-pointer ${
+                                    props.direction
+                                        ? "rounded-full"
+                                        : "rounded-lg"
+                                }`}
+                            >
+                                <div className="w-full h-[30px] py-6 md:h-[62px] overflow-hidden rounded-lg flex items-center bg-[var(--newBgProvider)]">
+                                    <img
+                                        key={index}
+                                        src={item.Logo}
+                                        alt="Logo"
+                                        className="w-[80%] mx-auto"
+                                    />
+                                </div>
+                            </div>
+                        </SplideSlide>
+                    ))}
+                </Splide>
+            </div>
+        </div>
+    );
 };

@@ -56,126 +56,129 @@ import logo28 from "../../assets/img/Logo/logo (20).png";
 import "@splidejs/react-splide/css";
 import RegisterEmail from "../signs/RegisterEmail";
 
-const iconsArray = [
-  coin1,
-  coin2,
-  coin3,
-  coin4,
-  coin5,
-  coin6,
-  coin7,
-  coin8,
-  coin9,
-  coin10,
-  coin11,
-  coin12,
-  coin13,
-  coin14,
-  coin15,
-  coin16,
-  coin17,
-  coin19,
-  coin20
-];
-
-const Logos = [
-  {
-    Logo: logo2,
-    Url: "../ALL/Ezugi"
-  },
-  {
-    Logo: logo4,
-    Url: "../ALL/Novomatic"
-  },
-  {
-    Logo: logo5,
-    Url: "../ALL/7Mojos"
-  },
-  {
-    Logo: logo7,
-    Url: "../ALL/AvatarUX"
-  },
-  {
-    Logo: logo8,
-    Url: "../ALL/Octoplay"
-  },
-  {
-    Logo: logo10,
-    Url: "../ALL/Blueprint"
-  },
-  {
-    Logo: logo11,
-    Url: "../ALL/Hacksaw Gaming"
-  },
-  {
-    Logo: logo12,
-    Url: "../ALL/Peter Sons"
-  },
-  {
-    Logo: logo13,
-    Url: "../ALL/SA Gaming"
-  }
-];
-
 export const Footer = () => {
-  const { t } = useTranslation();
+    const { t } = useTranslation();
 
-  const expandMenuState = useSelector((state) => state.openMenuState.value);
-  const isLogin = useSelector((state) => state.loginState.isLogin);
-  const [open, setOpen] = useState(false);
-  const [type, setType] = useState("");
+    const expandMenuState = useSelector((state) => state.openMenuState.value);
+    const isLogin = useSelector((state) => state.loginState.isLogin);
+    const [open, setOpen] = useState(false);
+    const [type, setType] = useState("");
 
-  const signUp = () => {
-    if (!isLogin) {
-      setType("signup_email");
-      setOpen(!isLogin);
+    const iconsArray = [
+        coin1,
+        coin2,
+        coin3,
+        coin4,
+        coin5,
+        coin6,
+        coin7,
+        coin8,
+        coin9,
+        coin10,
+        coin11,
+        coin12,
+        coin13,
+        coin14,
+        coin15,
+        coin16,
+        coin17,
+        coin19,
+        coin20,
+    ];
+
+    const Logos = [
+        {
+            Logo: logo2,
+            Url: "../ALL/Ezugi",
+        },
+        {
+            Logo: logo4,
+            Url: "../ALL/Novomatic",
+        },
+        {
+            Logo: logo5,
+            Url: "../ALL/7Mojos",
+        },
+        {
+            Logo: logo7,
+            Url: "../ALL/AvatarUX",
+        },
+        {
+            Logo: logo8,
+            Url: "../ALL/Octoplay",
+        },
+        {
+            Logo: logo10,
+            Url: "../ALL/Blueprint",
+        },
+        {
+            Logo: logo11,
+            Url: "../ALL/Hacksaw Gaming",
+        },
+        {
+            Logo: logo12,
+            Url: "../ALL/Peter Sons",
+        },
+        {
+            Logo: logo13,
+            Url: "../ALL/SA Gaming",
+        },
+      
+       
+       
+        
+    ];
+
+    const signUp = () => {
+        if (!isLogin) {
+            setType("signup_email");
+            setOpen(!isLogin);
+        }
     }
-  };
-  return (
-    <>
-      <footer className={`pt-16 mt-5`}>
-        {/* <div className='content-footer-area px-3 md:px-3 max-w-[1430px] mx-auto'> */}
-        <div className="content-footer-area px-3 md:px-8 mx-auto footers py-8">
-          <div className="why-area grid lg:grid-cols-1 gap-6 lg:gap-6">
-            <div className="left-area-footer-why">
-              <div>
-                <h1 className="text-black flex items-center justify-center text-[30px] mb-5">
-                  <img width={"40px"} src={logo14}></img>
-                  <a
-                    href="/"
-                    style={{ fontWeight: "bolder", "margin-left": "10px" }}
-                  >
-                    Lucky8online.com
-                  </a>
-                </h1>
+    return (
+        <>
+            <footer className={`pt-16 mt-5`}>
+                {/* <div className='content-footer-area px-3 md:px-3 max-w-[1430px] mx-auto'> */}
+                <div className="content-footer-area px-3 md:px-8 mx-auto footers py-8">
+                    <div className="why-area grid lg:grid-cols-1 gap-6 lg:gap-6">
+                        <div className="left-area-footer-why">
+                            
+                            <div>
+                               
+                                
+                                   
+                                    <h1 className="text-black flex items-center justify-center text-[30px] mb-5">
+                                    <img width={"40px"}  src={logo14}></img><a 
+                                            href="/" style={{"fontWeight":"bolder","margin-left":"10px"}}
 
-                <p className="text-center text-white font-bold flex items-center justify-center text-[24px] mb-5">
-                  {t(
-                    "We're not just another name in the online gaming world; we represent the future of entertainment. We bring you a fantastic mix of casino games, sports betting, and a variety of other interactive experiences—all powered by the revolutionary Web3 technology. With LuckyGao, we invite you on a gaming adventure that's both exciting and thrilling, offering an absolute blend of fun and the joy of winning!"
-                  )}
-                </p>
-              </div>
-              <div className="right-area mt-5">
-                <p className="text-center text-white font-bold flex items-center justify-center mb-3">
-                  {t("Join Lucky8")}
-                </p>
-              </div>
-              {!isLogin && (
-                <p className="flex items-center justify-center">
-                  <button
-                    className="bg-black text-[var(--logoutBg)] mt-3 font-bold py-2 px-4 rounded"
-                    onClick={() => signUp()}
-                  >
-                    Join Now
-                  </button>
-                </p>
-              )}
-            </div>
-          </div>
-          {/* 
+                                        >
+                                            
+                                           Lucky8online.com
+                                        </a>
+                                    </h1>
+
+                                   
+                            
+                                
+                                <p className="text-white font-bold flex items-center justify-center text-[24px] mb-5">{t("We're not just another name in the online gaming world; we represent the future of entertainment. We bring you a fantastic mix of casino games, sports betting, and a variety of other interactive experiences—all powered by the revolutionary Web3 technology. With LuckyGao, we invite you on a gaming adventure that's both exciting and thrilling, offering an absolute blend of fun and the joy of winning!")}</p>
+                            </div>
+                            <div className="right-area mt-5">
+                                
+                                <p className="text-white font-bold flex items-center justify-center mb-3">{t("Join Lucky8")}</p>
+                            </div >
+                            {!isLogin &&
+                            <p className="flex items-center justify-center">
+                            <button className="bg-black text-[var(--logoutBg)] mt-3 font-bold py-2 px-4 rounded" onClick={() => signUp()}>
+                                Join Now
+                            </button></p>}
+                        </div>
+
+                        
+                    </div>
+                    {/* 
                 <div className="logo-footer-area grid lg:grid-cols-2 gap-6 lg:gap-36 ">
                 </div> */}
-          {/* 
+                    {/* 
                 <div className="list-area-footer grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5">
                     <ul>
                         <li className="head">{t("Casino")}</li>
@@ -199,38 +202,37 @@ export const Footer = () => {
 
                 </div> */}
 
-          <div className=" mt-12">
-            <h1 className="text-black font-bold mb-5 flex items-center justify-center text-[22px]">
-              Top Providers
-            </h1>
-            <div className="icons-wrapper flex flex-wrap gap-9 justify-center">
-              {Logos.map((item, index) => (
-                <a key={index} href={item.Url}>
-                  <img src={item.Logo} alt="Logo" className="h-10 " />
-                </a>
-              ))}
-            </div>
-          </div>
+                   
+                    <div className=" mt-12">
+                        <h1 className="text-black font-bold mb-5 flex items-center justify-center text-[22px]">Top Providers</h1>
+                        <div className="icons-wrapper flex flex-wrap gap-9 justify-center">
+                            {Logos.map((item, index) => (
+                                <a key={index} href={item.Url}>
+                                    <img
+                                        src={item.Logo}
+                                        alt="Logo"
+                                        className="h-10 "
+                                    />
+                                </a>
+                            ))}
+                        </div>
+                    </div>
 
-          <div className="copyright-area mt-10 mb-10 text-center  flex items-center justify-center text-[10px] mt-6 ">
-            <p>
-              © 2025 Lucky8. {t("All rights reserved")} | Privacy Policy | Terms
-              & Conditions |{" "}
-              <span style={{ fontWeight: "bolder" }}>
-                Email: lucky8@gmail.com
-              </span>
-            </p>
-          </div>
-        </div>
-      </footer>
-      {!isLogin && (
-        <RegisterEmail
-          open={open}
-          setOpen={setOpen}
-          type={type}
-          setType={setType}
-        />
-      )}
-    </>
-  );
+                   
+
+                    <div className="copyright-area mt-10  flex items-center justify-center text-[10px] mt-6 ">
+                        <p>© 2025 Lucky8. {t("All rights reserved")} | Privacy Policy | Terms & Conditions | <span style={{"fontWeight":"bolder"}}>Email: lucky8@gmail.com</span></p>
+                       
+                    </div>
+                </div>
+            </footer>
+            {!isLogin &&
+                <RegisterEmail
+                    open={open}
+                    setOpen={setOpen}
+                    type={type}
+                    setType={setType}
+                />}
+        </>
+    );
 };

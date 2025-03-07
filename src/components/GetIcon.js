@@ -67,162 +67,158 @@ import support from "../assets/img/aside/Support.svg";
 
 import bets from "../assets/img/aside/roulette.svg";
 
-import profile from "../assets/img/new_design/aside/profile.svg";
-import myBets from "../assets/img/new_design/aside/myBets.svg";
-import transactions from "../assets/img/new_design/aside/transactions.svg";
-
 import lang from "../assets/img/new_design/aside/language.svg";
 import lang_hover from "../assets/img/new_design/aside/language.svg";
 
 export const GetIcon = ({ type, active }) => {
-  const [icon, setIcon] = useState("");
+    const [icon, setIcon] = useState("");
 
-  useEffect(() => {
-    switch (type) {
-      case "lobby":
-        if (active) {
-          setIcon(lobbyHome_hover);
-        } else {
-          setIcon(lobbyHome);
-        }
-        break;
-      case "sports":
-        if (active) {
-          setIcon(sportsBasketball_hover);
-        } else {
-          setIcon(sportsBasketball);
-        }
-        break;
-      case "egame":
-        if (active) {
-          setIcon(casino_hover);
-        } else {
-          setIcon(casino);
-        }
-        break;
-      case "slot":
-        if (active) {
-          setIcon(newslots_hover);
-        } else {
-          setIcon(newslots);
-        }
-        break;
-      case "fishing":
-        if (active) {
-          setIcon(fishing_hover);
-        } else {
-          setIcon(fishing);
-        }
-        break;
-      case "thai":
-        if (active) {
-          setIcon(thai_hover);
-        } else {
-          setIcon(thai);
-        }
-        break;
-      case "table":
-        if (active) {
-          setIcon(tableGame_hover);
-        } else {
-          setIcon(tableGame);
-        }
-        break;
-      case "live":
-        if (active) {
-          setIcon(casino);
-        } else {
-          setIcon(casino_hover);
-        }
-        break;
-      case "LOTTO":
-        if (active) {
-          setIcon(lottoGame_hover);
-        } else {
-          setIcon(lottoGame);
-        }
-        break;
-      case "VIRTUAL":
-        if (active) {
-          setIcon(bingo_hover);
-        } else {
-          setIcon(bingo);
-        }
-        break;
-      case "CHICKEN":
-        if (active) {
-          setIcon(chicken_hover);
-        } else {
-          setIcon(chicken);
-        }
-        break;
-      case "Virtual":
-        if (active) {
-          setIcon(virtualGame_hover);
-        } else {
-          setIcon(virtualGame);
-        }
-        break;
-      case "Promotion":
-        if (active) {
-          setIcon(promotion_hover);
-        } else {
-          setIcon(promotion);
-        }
-        break;
-      case "VIP":
-        setIcon(vip);
-        break;
-      case "Support":
-        setIcon(support);
-        break;
-      case "Language":
-        if (active) {
-          setIcon(lang_hover);
-        } else {
-          setIcon(lang);
-        }
-        break;
-      case "ContactUs":
-        if (active) {
-          setIcon(support);
-        } else {
-          setIcon(support);
-        }
-        break;
-      case "FinancialReport":
-        if (active) {
-          setIcon(transactions);
-        } else {
-          setIcon(transactions);
-        }
-        break;
-      case "Account":
-        if (active) {
-          setIcon(profile);
-        } else {
-          setIcon(profile);
-        }
-        break;
-      case "MyBetList":
-        if (active) {
-          setIcon(myBets);
-        } else {
-          setIcon(myBets);
-        }
-        break;
-      case "Announce":
-        if (active) {
-          setIcon(promotion_hover);
-        } else {
-          setIcon(promotion);
-        }
-        break;
+    useEffect(() => {
+        switch (type) {
+            case "lobby":
+                if (active) {
+                    setIcon(lobbyHome_hover);
+                } else {
+                    setIcon(lobbyHome);
+                }
+                break;
+            case "sports":
+                if (active) {
+                    setIcon(sportsBasketball_hover);
+                } else {
+                    setIcon(sportsBasketball);
+                }
+                break;
+            case "egame":
+                if (active) {
+                    setIcon(casino_hover);
+                } else {
+                    setIcon(casino);
+                }
+                break;
+            case "slot":
+                if (active) {
+                    setIcon(newslots_hover);
+                } else {
+                    setIcon(newslots);
+                }
+                break;
+            case "fishing":
+                if (active) {
+                    setIcon(fishing_hover);
+                } else {
+                    setIcon(fishing);
+                }
+                break;
+            case "thai":
+                if (active) {
+                    setIcon(thai_hover);
+                } else {
+                    setIcon(thai);
+                }
+                break;
+            case "table":
+                if (active) {
+                    setIcon(tableGame_hover);
+                } else {
+                    setIcon(tableGame);
+                }
+                break;
+            case "live":
+                if (active) {
+                    setIcon(casino);
+                } else {
+                    setIcon(casino_hover);
+                }
+                break;
+            case "LOTTO":
+                if (active) {
+                    setIcon(lottoGame_hover);
+                } else {
+                    setIcon(lottoGame);
+                }
+                break;
+            case "VIRTUAL":
+                if (active) {
+                    setIcon(bingo_hover);
+                } else {
+                    setIcon(bingo);
+                }
+                break;
+            case "CHICKEN":
+                if (active) {
+                    setIcon(chicken_hover);
+                } else {
+                    setIcon(chicken);
+                }
+                break;
+            case "Virtual":
+                if (active) {
+                    setIcon(virtualGame_hover);
+                } else {
+                    setIcon(virtualGame);
+                }
+                break;
+            case "Promotion":
+                if (active) {
+                    setIcon(promotion_hover);
+                } else {
+                    setIcon(promotion);
+                }
+                break;
+            case "VIP":
+                setIcon(vip);
+                break;
+            case "Support":
+                setIcon(support);
+                break;
+            case "Language":
+                if (active) {
+                    setIcon(lang_hover);
+                } else {
+                    setIcon(lang);
+                }
+                break;
+            case "ContactUs":
+                if (active) {
+                    setIcon(support);
+                } else {
+                    setIcon(support);
+                }
+                break;
+            case "FinancialReport":
+                if (active) {
+                    setIcon(bets);
+                } else {
+                    setIcon(bets);
+                }
+                break;
+            case "Account":
+                if (active) {
+                    setIcon(bets);
+                } else {
+                    setIcon(bets);
+                }
+                break;
+            case "MyBetList":
+                if (active) {
+                    setIcon(bets);
+                } else {
+                    setIcon(bets);
+                }
+                break;
+            case "Announce":
+                if (active) {
+                    setIcon(promotion_hover);
+                } else {
+                    setIcon(promotion);
+                }
+                break;
 
-      default:
-        break;
-    }
-  }, [active]);
+            default:
+                break;
+        }
+    }, [active]);
 
-  return <img src={icon} alt={icon} className="w-[22px] bg-black rounded" />;
+    return <img src={icon} alt={icon} className="w-[22px] bg-black rounded" />;
 };
