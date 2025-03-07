@@ -33,6 +33,10 @@ export const Promotion = () => {
 	const getPromotions = useCallback(async () => {
 		try {
 			const res = await API.getAllPromotions(true);
+			console.log("res ::", res);
+			console.log("res.data ::", res.data);
+			console.log("res ::", res.data.promotionsList);
+			
 			if (res.data.promotionsList) {
 				setPromotionItems(res.data.promotionsList);
 			}

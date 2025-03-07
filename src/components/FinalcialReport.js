@@ -68,27 +68,27 @@ export const FinancialReport = () => {
     }
 
     return (
-        <div className="max-w-[1200px] m-auto w-full mt-[30px] px-4 md:px-0">
-            <div className="flex justify-between items-center mb-4 ">
-                <h1 className="text-lg font-bold text-[var(--secondaryColor)]">
+        <div className="max-w-[1200px] m-auto w-full mt-[30px] px-4">
+            <div className="block md:flex justify-between items-center mb-4">
+                <h1 className="text-lg mb-2 md:mb-0 font-bold text-[var(--secondaryColor)]">
                     Transactions History
                 </h1>
-                <div className="flex items-center">
+                <div className="block md:flex items-center">
                     <input
                         type="date"
-                        className="border p-1 rounded mr-2"
+                        className="border p-1 text-[13px] md:text-[16px] rounded mr-2"
                         defaultValue={fromDate}
                         onChange={(e) => handleDateChange(e, "from")}
                     />
                     <span>to</span>
                     <input
                         type="date"
-                        className="border p-1 rounded mx-2"
+                        className="border p-1 text-[13px] md:text-[16px] rounded mx-2"
                         defaultValue={toDate}
                         onChange={(e) => handleDateChange(e, "to")}
                     />
                     <button
-                        className="bg-[var(--logoutBg)] text-black font-bold py-2 px-4 rounded"
+                        className="bg-[var(--logoutBg)] text-[14px] md:text-[16px] text-black font-bold py-[5px] md:py-2 px-4 rounded mt-3 md:mt-0"
                         onClick={handleGoClick}
                     >
                         Go
@@ -102,7 +102,7 @@ export const FinancialReport = () => {
                 ></div>
             ) : (
                 <>
-                    <div className="overflow-x-auto relative shadow-md sm:rounded-lg mt-4">
+                    <div className="overflow-x-auto py-2 relative shadow-md sm:rounded-lg mt-4">
                         <table className="w-full text-sm text-left">
                             <thead className="text-xs text-[var(--textPrimaryColor)] uppercase">
                                 <tr>
@@ -214,7 +214,7 @@ export const FinancialReport = () => {
 
                     <div className="pagination flex justify-end mt-4 items-center">
                         <button
-                            className="px-3 py-1 border rounded mx-1 bg-[var(--logoutBg)] text-white"
+                            className="px-3 py-1 text-[12px] md:text-[16px] border rounded mx-1 bg-[var(--logoutBg)] text-white"
                             disabled={currentPage === 1}
                             onClick={() => setCurrentPage(currentPage - 1)}
                         >
@@ -231,7 +231,7 @@ export const FinancialReport = () => {
                                 return (
                                     <button
                                         key={number}
-                                        className={`px-3 py-1 border rounded mx-1 ${
+                                        className={`px-3 py-1 text-[12px] md:text-[16px] border rounded mx-1 ${
                                             currentPage === number
                                                 ? "bg-white text-black"
                                                 : "bg-[var(--logoutBg)] text-black"
@@ -249,7 +249,7 @@ export const FinancialReport = () => {
                                 return (
                                     <span
                                         key={number}
-                                        className="px-3 py-1 mx-1"
+                                        className="px-3 text-[12px] md:text-[16px] py-1 mx-1"
                                     >
                                         ...
                                     </span>
@@ -259,7 +259,7 @@ export const FinancialReport = () => {
                             }
                         })}
                         <button
-                            className="px-3 py-1 border rounded mx-1 bg-[var(--logoutBg)] text-white"
+                            className="px-3 py-1 text-[12px] md:text-[16px] border rounded mx-1 bg-[var(--logoutBg)] text-white"
                             disabled={currentPage === pageNumbers.length}
                             onClick={() => setCurrentPage(currentPage + 1)}
                         >

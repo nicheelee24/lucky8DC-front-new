@@ -131,21 +131,25 @@ aside .bonus-area {
 /* --------- */
 ::-webkit-scrollbar {
     width: 1px;
+    height: 9px;   /* new Add */
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #2d1950;
+    /* background: #2d1950; */
+    background: #504819;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgba(178, 121, 216, 0.959);
+    /* background: rgba(178, 121, 216, 0.959); */
+    background: rgba(240, 179, 9, 1);
     border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
+    /* background: rgba(222, 130, 235, 0.911); */
     background: rgba(222, 130, 235, 0.911);
     border-radius: 12px;
 }
@@ -475,7 +479,7 @@ footer .left-area-footer-why p,
 footer .logo-footer-area p,
 footer .cols-footer-area p {
     color: black;
-    font-size: 16px;
+    /* font-size: 16px; */
     font-family: "Arabic Pro Reg";
     line-height: 28.2px;
     word-wrap: break-word;
@@ -636,7 +640,8 @@ footer .icons-wrapper a {
 
 @media screen and (max-width: 480px) {
     .logo-mobile {
-        width: 70px;
+        /* width: 70px; */
+        width: 45px;
     }
 
     .mobile-view {
@@ -663,6 +668,19 @@ footer .icons-wrapper a {
 }
 
 @media screen and (max-width: 330px) {
+    .logo-mobile {
+        width: 40px;
+    }
+
+    .aside-img {
+        margin-right: 80px !important;
+    }
+
+    .welcome-text {
+        font-size: 0.65rem;
+        line-height: 0.75rem;
+    }
+
     .on-mobile-views {
         padding: 6px 15px;
     }

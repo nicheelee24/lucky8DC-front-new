@@ -113,17 +113,17 @@ export const Aside = () => {
     // }, [userInfo,promotionItems,isLogin]);
 
     useEffect(() => {
-        if(isLogin){
+        if (isLogin) {
             getUserInfo();
         }
-    },[isLogin]);
+    }, [isLogin]);
 
     const getUserInfo = useCallback(async () => {
-		const res = await API.getUserInfo();
-		if(res?.data) {
-			 setUserInfo(res.data);
-		}
-	}, [])
+        const res = await API.getUserInfo();
+        if (res?.data) {
+            setUserInfo(res.data);
+        }
+    }, [])
 
     // useEffect(() => {
     //     const fetchData = async () => {
@@ -133,10 +133,10 @@ export const Aside = () => {
     //             console.error("Error fetching data:", error);
     //         }
     //     };
-    
+
     //     fetchData();
     // }, []);
-    
+
     const registerList = [
         {
             Text: t("Log In"),
@@ -146,13 +146,13 @@ export const Aside = () => {
             Text: t("Sign Up"),
             Type: "signup_email",
         },
-       
+
     ];
 
     const gameListLeft = [
         {
             Text: t("Lobby"),
-            Type:"lobby"
+            Type: "lobby"
         },
         {
             Text: t("Slots"),
@@ -220,7 +220,7 @@ export const Aside = () => {
             Text: t("My Bets"),
             Type: "MyBetList",
         },
-       
+
         {
             Text: t("Transactions"),
             Type: "FinancialReport",
@@ -233,9 +233,9 @@ export const Aside = () => {
         //   Text: t('Language'),
         //   Type: 'Language'
         // }
-       
-       
-       
+
+
+
         // {
         //     Text: t("Announce"),
         //     Type: "Announce",
@@ -273,7 +273,7 @@ export const Aside = () => {
     function isValueInArray(value) {
         return IdWisePromotion?.games?.includes(value) || false;
     }
-    
+
     return (
         <>
             <div className="z-[15]">
@@ -282,28 +282,17 @@ export const Aside = () => {
                     <div
                         className={`flex flex-col z-[99] ${expandMenuState
                             ? isMobileDevice()
-                                ? "w-[388px] md:w-[265px]"
+                                ? "w-[350px] md:w-[265px]"
                                 : "w-[220px] md:w-[265px]"
                             : "w-0 md:w-[0px]"
                             } transition-width duration-[700ms] ease-in-out`}
                     >
-                        <div className="flex p-2 px-3 items-center">
-                            {/* Hamburger Button */}
-                            <div
-                                className="bg-[var(--bgColorWhite)] flex w-[70px] h-[70px] items-center justify-center text-white cursor-pointer"
-                                onClick={() => {
-                                    dispatch(reverse());
-                                    setIsLang(false);
-                                }}
-                            >
-                                <img src={menuExpander} alt="menuExpander" />
-                            </div>
-
+                        <div className="flex p-2 px-3 items-center justify-between">
                             <div
                                 className={`${expandMenuState ? "" : "hidden"
                                     }`}
                             >
-                                <a href="/ALL/BGaming" className="flex justify-center items-center">
+                                <a href="/ALL/BGaming" className="flex justify-start items-center">
                                     <img
                                         src={LuckyGaoLogo}
                                         alt="logo"
@@ -312,12 +301,25 @@ export const Aside = () => {
                                     {/* <a href='/' className='text-[32px] font-semibold text-[#FF0000]'>LuckyGao</a> */}
                                 </a>
                             </div>
+
+                            {/* Hamburger Button */}
+                            <div
+                                className="bg-[var(--bgColorWhite)] flex w-[70px] h-[70px] items-center justify-center text-white cursor-pointer "
+                                onClick={() => {
+                                    dispatch(reverse());
+                                    setIsLang(false);
+                                }}
+                            >
+                                <img src={menuExpander} alt="menuExpander" />
+                            </div>
+
+
                         </div>
-                        
+
 
                         <div className="w-full !px-2 mt-8 gap-2 flex">
                             <button
-                                className={`w-full btn-f1 deposit ${expandMenuState ? "" : "hidden"
+                                className={`w-1/3 md:w-full text-[13px] md:text-[16px] btn-f1 deposit ${expandMenuState ? "" : "hidden"
                                     } rounded-lg`}
                                 onClick={() => handleDeposit(true)}
                             >
@@ -325,7 +327,7 @@ export const Aside = () => {
                             </button>
 
                             <button
-                                className={`w-full btn-f1 withdraw ${expandMenuState ? "" : "hidden"
+                                className={`w-1/3 md:w-full text-[13px] md:text-[16px] btn-f1 withdraw ${expandMenuState ? "" : "hidden"
                                     } rounded-lg`}
                                 onClick={() => handleWithdraw(true)}
                             >
@@ -344,7 +346,7 @@ export const Aside = () => {
                                 : "hidden"
                                 } `}
                         >
-                            
+
                             {/* {gameListLeft.map((item, index) => {
                                 return (
                                     <>
@@ -401,7 +403,7 @@ export const Aside = () => {
                 type={type}
                 setType={setType}
             />
-            
+
             <ResetPassword
                 open={open}
                 setOpen={setOpen}

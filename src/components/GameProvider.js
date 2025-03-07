@@ -209,7 +209,7 @@ export const GameProvider = (props) => {
 
     return (
         <div className="icons-wrapper md:mt-7 text-white">
-            <div className="top flex items-center justify-between mb-6">
+            <div className="top flex items-center justify-center lg:justify-start mt-6 md:mt-0 mb-6">
                 <h1 className="flex items-center text-sm md:text-xl text-white font-bold">
                     {t("Providers")}
                 </h1>
