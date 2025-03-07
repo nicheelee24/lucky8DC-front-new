@@ -289,7 +289,7 @@ export const Header = () => {
                                         <ReactFlagsSelect
                                             selected={country}
                                             onSelect={onCountrySelect}
-                                            countries={["CN", "HK"]}
+                                            countries={["CN", "HK","TW"]}
                                             showSelectedLabel={false}
                                             showOptionLabel={false}
                                            
@@ -436,9 +436,11 @@ export const Header = () => {
                                         <ReactFlagsSelect
                                             selected={country}
                                             onSelect={onCountrySelect}
-                                            countries={["CN", "HK"]}
+                                            countries={["CN", "HK","TW"]}
                                             showSelectedLabel={false}
                                             showOptionLabel={false}
+                                            optionsSize={"20px"}
+                                            fullWidth={"24px"}
                                         /*showSelectedLabel={showSelectedLabel}
                                         selectedSize={selectedSize}
                                         showOptionLabel={showOptionLabel}
