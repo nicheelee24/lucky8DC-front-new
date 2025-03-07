@@ -285,13 +285,14 @@ export const Header = () => {
                                         </div>
                                     )}
                                 </div>
-                                <div className="relative inline-block">
+                                <div className="relative inline-block" >
                                         <ReactFlagsSelect
                                             selected={country}
                                             onSelect={onCountrySelect}
                                             countries={["CN", "HK"]}
                                             showSelectedLabel={false}
                                             showOptionLabel={false}
+                                            style={{"font-size": "26px","margin-left": "-34px;"}}
                                         /*showSelectedLabel={showSelectedLabel}
                                         selectedSize={selectedSize}
                                         showOptionLabel={showOptionLabel}
@@ -431,7 +432,7 @@ export const Header = () => {
                                             </div>
                                         )}
                                     </div>
-                                    <div className="relative inline-block">
+                                    <div className="relative inline-block" style={{"font-size": "26px","margin-left": "-24px;"}}>
                                         <ReactFlagsSelect
                                             selected={country}
                                             onSelect={onCountrySelect}
