@@ -101,6 +101,8 @@ export default function Deposit({ open, setOpen, type, setType }) {
         setType("reset");
     };
 
+    
+
     const failLogIn = () =>
         toast.error(t("Valid input"), {
             position: "top-right",

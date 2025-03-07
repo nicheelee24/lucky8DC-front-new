@@ -2,6 +2,8 @@ import React, { useState, useEffect, useCallback, useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { useSelector, useDispatch } from "react-redux";
 import { setLogoutState } from "../../redux/reducers/loginState";
+import ReactFlagsSelect from "react-flags-select";
+
 
 import search from "../../assets/img/search.svg";
 import * as API from "../../services/api";
@@ -32,6 +34,7 @@ import SportsIcon from "../../assets/img/svg/soccer.svg";
 import HorseIcon from "../../assets/img/svg/horse.svg";
 import LotteryIcon from "../../assets/img/svg/lottery.svg";
 import TranslationIcon from "../../assets/img/svg/translation.svg";
+import CountryIcon from "../../assets/img/country.png.png";
 import SearchIcon from "../../assets/img/svg/search.svg";
 import WorldIcon from "../../assets/img/svg/world.svg";
 
@@ -60,25 +63,41 @@ export const Header = () => {
     const [loadingBalance, setLoadingBalance] = useState(false);
     const [username, setUsername] = useState("");
 
+    const [checkCountryState, setCheckCountryState] = useState(null)
     const [searchItem, setSearchItem] = useState('');
     const [provider, setProviders] = useState("");
+
+    const [country, setCountry] = useState("CN");
+    const onCountrySelect = (code) => setCountry(code);
+
     const handleInputChange = (e) => {
         const searchTerm = e.target.value;
         setSearchItem(searchTerm)
     }
 
+    const countriesList = [
+        "China",
+        "Hong Kong"
+    ];
+
+    const handleCountryChange = (e) => {
+        setCountry(!checkCountryState);
+        const country = e.target.value;
+        setCountry(country);
+    };
+
     const fetchProviders = useCallback(async () => {
-        
+
         try {
             const res = await API.getUserBalance();
             setBalance(res.data.balance);
-            
+
             // debugger
         } catch (error) {
             // Handle error appropriately (e.g., log it, show a user-friendly message)
             console.error("Error fetching balance info:", error);
         }
-       
+
     }, []);
     const fetchBalance = useCallback(async () => {
         setLoadingBalance(true);
@@ -155,7 +174,7 @@ export const Header = () => {
                         }}
                     >
                         <img src={MenuExpander} alt="menuExpander" className={`w-[30px] ${expandMenuState ? "hidden" : ""
-                            }`}/>
+                            }`} />
                     </div>
 
                     <img
@@ -185,10 +204,10 @@ export const Header = () => {
                             // window.localStorage.getItem("token") === null ||
                             !isLogin ? (
                             <>
-                               
-                               
 
-                               
+
+
+
 
                                 <Link to={"/LIVE/ALL"}>
                                     <div className="hidden lg:flex gap-2 py-[14px] px-[24px] cursor-pointer hover:bg-[var(--bgColors)]">
@@ -204,7 +223,7 @@ export const Header = () => {
                                     </div>
                                 </Link>
 
-                              
+
 
                                 <button
                                     className="bg-transparent text-[var(--secondaryColor)] flex rounded justify-center items-center leading-[28px] py-[6px] px-[15px] md:px-[38px] border-2 border-[var(--secondaryColor)] on-mobile-views-login"
@@ -227,7 +246,7 @@ export const Header = () => {
                                     {/* <img src={signUp} alt='sign Up' className='mr-2' /> */}
                                     {t("Sign Up")}
                                 </button>
-                              
+
 
                                 {/* <span className="mx-4 w-8 h-8">
                                     <img
@@ -392,6 +411,25 @@ export const Header = () => {
                                                 </div>
                                             </div>
                                         )}
+                                    </div>
+                                    <div className="relative inline-block">
+                                        <ReactFlagsSelect
+                                            selected={country}
+                                            onSelect={onCountrySelect}
+                                            countries={["CN", "HK"]}
+                                            showSelectedLabel={false}
+                                            showOptionLabel={false}
+                                        /*showSelectedLabel={showSelectedLabel}
+                                        selectedSize={selectedSize}
+                                        showOptionLabel={showOptionLabel}
+                                        optionsSize={optionsSize}
+                                        placeholder={placeholder}
+                                        searchable={searchable}
+                                        searchPlaceholder={searchPlaceholder}
+                                        alignOptionsToRight={alignOptionsToRight}
+                                        fullWidth={fullWidth}
+                                        disabled={disabled} */
+                                        />
                                     </div>
                                 </p>
                             </div>
