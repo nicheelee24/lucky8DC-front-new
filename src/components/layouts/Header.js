@@ -67,8 +67,8 @@ export const Header = () => {
     const [searchItem, setSearchItem] = useState('');
     const [provider, setProviders] = useState("");
 
-    const [country, setCountry] = useState("CN");
-    const onCountrySelect = (code) => setCountry(code);
+    const [country, setCountry] = useState(localStorage.getItem("cntry"));
+    const onCountrySelect = (code) => {setCountry(code);localStorage.setItem("cntry", code);window.location.href='../';};
 
     const handleInputChange = (e) => {
         const searchTerm = e.target.value;
@@ -285,14 +285,14 @@ export const Header = () => {
                                         </div>
                                     )}
                                 </div>
-                                <div className="relative inline-block" >
+                                <div className="relative inline-block" style={{"font-size": "26px","margin-left": "-34px;"}}>
                                         <ReactFlagsSelect
                                             selected={country}
                                             onSelect={onCountrySelect}
                                             countries={["CN", "HK"]}
                                             showSelectedLabel={false}
                                             showOptionLabel={false}
-                                            style={{"font-size": "26px","margin-left": "-34px;"}}
+                                           
                                         /*showSelectedLabel={showSelectedLabel}
                                         selectedSize={selectedSize}
                                         showOptionLabel={showOptionLabel}
@@ -356,7 +356,7 @@ export const Header = () => {
                                     </p> */}
 
                                     <div className="flex flex-col gap-1 md:gap-4 md:flex-row">
-                                        <span className="text-white welcome-text text-xs md:text-sm lg:text-lg w-auto md:px-2 ml-[6px] md:ml-0">
+                                        <span className="text-white welcome-text text-xs md:text-sm lg:text-lg w-auto md:px-2 ml-[6px] md:ml-0" >
                                             {"Welcome, " + username + "! "}
                                         </span>
 

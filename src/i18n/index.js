@@ -35,6 +35,7 @@ i18n
     .init({
         resources,  // resources are important to load translations for the languages.
         lng: localStorage.getItem("lang"),  // It acts as default language. When the site loads, content is shown in this language.
+        cntry: localStorage.getItem("cntry"),
         debug: true,
         fallbackLng: "en",  // use en if selected language is not available
         interpolation: {

@@ -39,37 +39,36 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { useNavigate } from "react-router";
 
 export const GameProvider = (props) => {
+    const country=localStorage.getItem("cntry");
+    console.log("country"+country);
     const { t } = useTranslation();
 
     const navigation = useNavigate();
 
-    const Logos = [
+    let Providers=[];
+    
+    if(country=="CN")
+    {
+    Providers= [
+        {
+            Logo: octo,
+            Url: "",
+            platform: "Octoplay",
+        },
 
         {
             Logo: bg,
             Url: "",
             platform: "BGaming",
         },
-        {
-            Logo: evollution,
-            Url: "",
-            platform: "Evolution",
-        },
-        {
-            Logo: octo,
-            Url: "",
-            platform: "Octoplay",
-        },
+        
+       
         {
             Logo: thunder,
             Url: "",
             platform: "Thunder Kick",
         },
-        {
-            Logo: btg,
-            Url: "",
-            platform: "BigTime Gaming",
-        },
+       
         {
             Logo: blueprint,
             Url: "",
@@ -80,11 +79,7 @@ export const GameProvider = (props) => {
         //     Url: "",
         //     platform: "Push Gaming",
         // },
-        {
-            Logo: ezugi,
-            Url: "",
-            platform: "Ezugi",
-        },
+       
         {
             Logo: fnta,
             Url: "",
@@ -206,6 +201,142 @@ export const GameProvider = (props) => {
        
        
     ];
+}
+else
+{
+    Providers= [
+
+        
+        {
+            Logo: evollution,
+            Url: "",
+            platform: "Evolution",
+        },
+        {
+            Logo: btg,
+            Url: "",
+            platform: "BigTime Gaming",
+        },
+        {
+            Logo: octo,
+            Url: "",
+            platform: "Octoplay",
+        },
+       
+       
+       
+       
+        {
+            Logo: ezugi,
+            Url: "",
+            platform: "Ezugi",
+        },
+        {
+            Logo: fnta,
+            Url: "",
+            platform: "Fantasma Games",
+        },
+      
+        {
+            Logo: novo,
+            Url: "",
+            platform: "Novomatic",
+        },
+        {
+            Logo: mojos,
+            Url: "",
+            platform: "7Mojos",
+        },
+       
+        {
+            Logo: logo27,
+            Url: "",
+            platform: "Evoplay",
+        },
+        {
+            Logo: yolted,
+            Url: "",
+            platform: "Yolted",
+        },
+        {
+            Logo: logo16,
+            Url: "",
+            platform: "AvatarUX",
+        },
+        {
+            Logo: logo29,
+            Url: "",
+            platform: "Peter Sons",
+        },
+       
+        {
+            Logo: logo20,
+            Url: "",
+            platform: "Hacksaw Gaming",
+        },
+        {
+            Logo: redtiger,
+            Url: "",
+            platform: "Red Tiger",
+        },
+        {
+            Logo: sa,
+            Url: "",
+            platform: "SA Gaming",
+        },
+        {
+            Logo: logo28,
+            Url: "",
+            platform: "FunTa Gaming",
+        },
+        {
+            Logo: logo22,
+            Url: "",
+            platform: "Nolimit City",
+        },
+    
+        {
+            Logo: evolution,
+            Url: "",
+            platform: "Relax Gaming",
+        },
+        {
+            Logo: playngo,
+            Url: "",
+            platform: "Slotmill",
+        },
+        {
+            Logo: ygg,
+            Url: "",
+            platform: "Yggdrasil Gaming",
+        },
+       
+        {
+            Logo: logo25,
+            Url: "",
+            platform: "Turbo Games (Asia)",
+        },
+        // {
+        //     Logo: logo26,
+        //     Url: "",
+        //     platform: "SmartSoft",
+        // },
+        {
+            Logo: netent,
+            Url: "",
+            platform: "NetEnt",
+        },
+        // {
+        //     Logo: gamo,
+        //     Url: "",
+        //     platform: "Gamomat",
+        // },
+       
+       
+       
+       
+    ];
+}
 
     return (
         <div className="icons-wrapper md:mt-7 text-white">
@@ -246,7 +377,11 @@ export const GameProvider = (props) => {
                         },
                     }}
                 >
-                    {Logos.map((item, index) => (
+                    
+                    {
+                    
+                    
+                    Providers.map((item, index) => (
                         <SplideSlide
                             key={index}
                             onClick={() =>
@@ -274,6 +409,7 @@ export const GameProvider = (props) => {
                             </div>
                         </SplideSlide>
                     ))}
+                
                 </Splide>
             </div>
         </div>
