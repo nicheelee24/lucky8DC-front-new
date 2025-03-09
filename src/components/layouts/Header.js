@@ -285,13 +285,14 @@ export const Header = () => {
                                         </div>
                                     )}
                                 </div>
-                                <div style={{"font-size": "26px","margin-left": "-54px;"}}>
+                                <div>
                                         <ReactFlagsSelect
                                             selected={country}
                                             onSelect={onCountrySelect}
                                             countries={["CN", "HK","TW"]}
                                             showSelectedLabel={false}
                                             showOptionLabel={false}
+                                            
                                            
                                         /*showSelectedLabel={showSelectedLabel}
                                         selectedSize={selectedSize}
@@ -393,7 +394,7 @@ export const Header = () => {
                                             setUploadGame(false);
                                             dispatch(setLogoutState());
                                         }}
-                                    >
+                                   style={{"margin-left":"-10px"}} >
                                         {/* <img src={signIn} alt='sign out' className='mr-2' /> */}
 
                                         {t("Log Out")}
@@ -402,7 +403,7 @@ export const Header = () => {
                                             $ USD
                                         </span> */}
                                     <div className="relative inline-block text-left">
-                                        <span>
+                                        <span style={{"margin-left":"-10px"}}>
                                             <button
                                                 type="button"
                                                 onClick={toggleDropdown}
