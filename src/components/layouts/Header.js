@@ -131,7 +131,7 @@ export const Header = () => {
     const fetchUser = useCallback(async () => {
         try {
             const res = await API.getUserInfo();
-            setUsername(res.data.name);
+            setUsername(res.data.phone);
 
             if (isLogin && validEmails.includes(res.data.email)) {
                 setUploadGame(true);
@@ -285,7 +285,7 @@ export const Header = () => {
                                         </div>
                                     )}
                                 </div>
-                                <div className="relative inline-block" style={{"font-size": "26px","margin-left": "-34px;"}}>
+                                <div style={{"font-size": "26px","margin-left": "-54px;"}}>
                                         <ReactFlagsSelect
                                             selected={country}
                                             onSelect={onCountrySelect}
@@ -361,7 +361,7 @@ export const Header = () => {
                                         </span>
 
                                         <div className="flex gap-2 items-center">
-                                            <span className="text-white welcome-text text-xs md:text-sm lg:text-lg" style={{ marginLeft: "6px" }}>{"Balance: "}
+                                            <span className="text-white welcome-text text-xs md:text-sm lg:text-lg" style={{ marginLeft: "4px" }}>{"Bal: "}
                                                 {loadingBalance
                                                     ? "..."
                                                     : balance.toFixed(2) +
