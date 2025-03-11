@@ -22,8 +22,11 @@ export async function getUserInfo() {
     return await api.get(`/auth`);
 }
 
+// export async function getUserBalance() {
+//     return await api.post('/pay/balance')
+// }
 export async function getUserBalance() {
-    return await api.post('/pay/balance')
+    return await api.post('/pay/dc_balance')
 }
 
 export async function getHome() {
