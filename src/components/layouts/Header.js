@@ -103,9 +103,10 @@ export const Header = () => {
         setLoadingBalance(true);
         try {
             const res = await API.getUserBalance();
+            console.log(res.data.balance);
             setBalance(res.data.balance);
            // setTotalBetAmount(res.data.totalTurnover);
-            // debugger
+             debugger
         } catch (error) {
             // Handle error appropriately (e.g., log it, show a user-friendly message)
             console.error("Error fetching balance info:", error);
