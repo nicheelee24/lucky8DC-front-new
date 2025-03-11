@@ -104,7 +104,7 @@ export const Header = () => {
         try {
             const res = await API.getUserBalance();
             setBalance(res.data.balance);
-            setTotalBetAmount(res.data.totalTurnover);
+           // setTotalBetAmount(res.data.totalTurnover);
             // debugger
         } catch (error) {
             // Handle error appropriately (e.g., log it, show a user-friendly message)
