@@ -103,7 +103,7 @@ export const Header = () => {
         setLoadingBalance(true);
         try {
             const res = await API.getUserBalance();
-            console.log(res.data.balance);
+            console.log("bbbbbbb..."+res);
             setBalance(res.data.balance);
            // setTotalBetAmount(res.data.totalTurnover);
              debugger
