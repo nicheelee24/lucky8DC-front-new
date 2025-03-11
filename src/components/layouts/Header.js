@@ -366,14 +366,14 @@ export const Header = () => {
                                             <span className="text-white welcome-text text-xs md:text-sm lg:text-lg" style={{ marginLeft: "4px" }}>{"Bal: "}
                                                 {loadingBalance
                                                     ? "..."
-                                                    : balance.toFixed(2) +
+                                                    : balance +
                                                     " CNY "}
                                                 {/* <span className="text-[var(--logoutBg)]" style={{ fontSize: "16px" }}> */}
                                                 <span className="text-[var(--logoutBg)] welcome-text text-xs md:text-sm lg:text-lg">
                                                     {loadingBalance
                                                         ? "..."
                                                         : " (Turnover: " +
-                                                        totalBetAmount.toFixed(2) +
+                                                        totalBetAmount +
                                                         ")"}
                                                 </span>
                                             </span>
