@@ -650,10 +650,10 @@ footer .icons-wrapper a {
   .icon-bar a {
     display: block;
     text-align: center;
-    padding: 26px;
+    padding: 14px;
     transition: all 0.3s ease;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     border-radius: 80%;
   }
   
@@ -667,13 +667,14 @@ footer .icons-wrapper a {
   .telegram {
     background: #3B5998;
     color: white;
-    margin-bottom: 5px;
+    
   }
   
   
   .line {
     background: #00b518;
     color: white;
+    margin-bottom: 5px;
   }
   
   
