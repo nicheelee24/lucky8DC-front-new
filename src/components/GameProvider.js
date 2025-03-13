@@ -100,11 +100,11 @@ export const GameProvider = (props) => {
             Url: "",
             platform: "7Mojos",
         },
-        // {
-        //     Logo: logo24,
-        //     Url: "",
-        //     platform: "Play'n GO",
-        // },
+        {
+            Logo: logo24,
+            Url: "",
+            platform: "Play'n GO",
+        },
         {
             Logo: logo27,
             Url: "",
@@ -205,7 +205,11 @@ export const GameProvider = (props) => {
 else
 {
     Providers= [
-
+        {
+            Logo: logo24,
+            Url: "",
+            platform: "Play'n GO",
+        },
         
         {
             Logo: evollution,
