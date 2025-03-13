@@ -180,10 +180,10 @@ export const Header = () => {
                             }`} />
                     </div>
 
-                    <img
+                    <img 
                         src={
                             isMobileDevice() ? LuckyGaoLogo : LuckyGaoLogo
-                        }
+                        } 
                         alt="Teslla"
                         className={`w-[65px] h-[auto] ml-2 ${expandMenuState ? "hidden" : "ml:flex"
                             } logo-mobile`}

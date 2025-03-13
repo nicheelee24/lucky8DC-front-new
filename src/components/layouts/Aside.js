@@ -296,7 +296,7 @@ export const Aside = () => {
                                     <img
                                         src={LuckyGaoLogo}
                                         alt="logo"
-                                        className="w-[50%]"
+                                        className="w-[60%]" style={{"marginLeft":"25%"}}
                                     />
                                     {/* <a href='/' className='text-[32px] font-semibold text-[#FF0000]'>LuckyGao</a> */}
                                 </a>
