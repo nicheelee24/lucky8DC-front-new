@@ -45,6 +45,8 @@ import Cards from "../../assets/img/new_design/cards.svg";
 
 import { reverse } from "../../redux/reducers/openMenu";
 import { Link, useLocation } from "react-router-dom";
+import {StickyShareButtons} from 'sharethis-reactjs';
+
 
 export const Header = () => {
     const { t } = useTranslation();
@@ -308,6 +310,8 @@ export const Header = () => {
                                         />
                                     </div>
 
+                                 
+
                             </>
                         ) : (
                             <div className="gap-4 items-center">
@@ -455,6 +459,15 @@ export const Header = () => {
                                         disabled={disabled} */
                                         />
                                     </div>
+
+                                    <div class="icon-bar">
+
+  
+  
+  <a href="https://www.line.me/en/" target="_blank" class="line">Line</a>
+  <a href="https://web.telegram.org/k/" class="telegram" target="_blank">TG</a>
+ 
+</div>
                                 </p>
                             </div>
                         )}

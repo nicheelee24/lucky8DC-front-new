@@ -638,6 +638,45 @@ footer .icons-wrapper a {
     cursor: pointer;
 }
 
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    transform: translateY(-50%);
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 26px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    border-radius: 80%;
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  
+  
+  .telegram {
+    background: #3B5998;
+    color: white;
+    margin-bottom: 5px;
+  }
+  
+  
+  .line {
+    background: #00b518;
+    color: white;
+  }
+  
+  
 
 
 @media screen and (max-width: 480px) {
