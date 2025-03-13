@@ -466,6 +466,7 @@ export const Header = () => {
   
   <a href="https://www.line.me/en/" target="_blank" class="line">Line</a>
   <a href="https://web.telegram.org/k/" class="telegram" target="_blank">TG</a>
+  
  
 </div>
                                 </p>
