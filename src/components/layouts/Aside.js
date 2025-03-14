@@ -364,7 +364,7 @@ export const Aside = () => {
                             {gameListLeft.map((item, index) => {
                                 return (
                                     <>
-                                        {(isValueInArray(item.Type) || !isLogin) ?
+                                        {(isValueInArray(item.Type) || isLogin) ?
                                             <SideIcon
                                                 text={item.Text}
                                                 type={item.Type}

@@ -16,7 +16,7 @@ export const TabsAside = ({ data }) => {
                   ActiveLi.classList.remove("active");
                 }
 
-                e.target.classList.add("active");
+              //  e.target.classList.add("active");
               }}
             >
               <div className="flex items-center !text-[18px]">
