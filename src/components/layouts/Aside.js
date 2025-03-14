@@ -150,40 +150,40 @@ export const Aside = () => {
     ];
 
     const gameListLeft = [
-        {
-            Text: t("Lobby"),
-            Type: "lobby"
-        },
-        {
-            Text: t("Slots"),
-            Type: "slot",
-        },
-        {
-            Text: t("Live Casino"),
-            Type: "live",
-        },
-        {
-            Text: t("Table Game"),
-            Type: "table",
-        },
+        // {
+        //     Text: t("Lobby"),
+        //     Type: "lobby"
+        // },
+        // {
+        //     Text: t("Slots"),
+        //     Type: "slot",
+        // },
+        // {
+        //     Text: t("Live Casino"),
+        //     Type: "live",
+        // },
+        // {
+        //     Text: t("Table Game"),
+        //     Type: "table",
+        // },
         {
             Text: t("Sports"),
-            Type: "sports",
+            Type: "ESPORTS",
         },
-        {
-            Text: t("EGame"),
-            Type: "egame",
-        },
+        // {
+        //     Text: t("EGame"),
+        //     Type: "egame",
+        // },
 
-        {
-            Text: t("Fishing Game"),
-            Type: "fishing",
-        },
-        {
-            Text: t("Thai Game"),
-            Type: "thai",
-            // Type: 'CHICKEN'
-        },
+        // {
+        //     Text: t("Fishing Game"),
+        //     Type: "fishing",
+        // },
+        // {
+        //     Text: t("Thai Game"),
+        //     Type: "thai",
+        //     // Type: 'CHICKEN'
+        // },
 
         // {
         //     Text: t("Lotto"),
@@ -296,7 +296,7 @@ export const Aside = () => {
                                     <img
                                         src={LuckyGaoLogo}
                                         alt="logo"
-                                        className="w-[60%]" style={{"marginLeft":"25%"}}
+                                        className="w-[60%]" style={{ "marginLeft": "25%" }}
                                     />
                                     {/* <a href='/' className='text-[32px] font-semibold text-[#FF0000]'>LuckyGao</a> */}
                                 </a>
@@ -347,21 +347,7 @@ export const Aside = () => {
                                 } `}
                         >
 
-                            {/* {gameListLeft.map((item, index) => {
-                                return (
-                                    <>
-                                        {(isValueInArray(item.Type) || !isLogin) ?
-                                            <SideIcon
-                                            text={item.Text}
-                                            type={item.Type}
-                                            index={index}
-                                            key={item.Text}
-                                            expand={expandMenuState}
-                                            />
-                                        : null}
-                                   </>
-                                );
-                            })} */}
+
 
                             {supportList.map((item, index) => {
                                 return (
@@ -372,6 +358,22 @@ export const Aside = () => {
                                         key={item.Text}
                                         expand={expandMenuState}
                                     />
+                                );
+                            })}
+
+                            {gameListLeft.map((item, index) => {
+                                return (
+                                    <>
+                                        {(isValueInArray(item.Type) || !isLogin) ?
+                                            <SideIcon
+                                                text={item.Text}
+                                                type={item.Type}
+                                                index={index}
+                                                key={item.Text}
+                                                expand={expandMenuState}
+                                            />
+                                            : null}
+                                    </>
                                 );
                             })}
 

@@ -56,139 +56,8 @@ export const SideIcon = ({ text, type, index, expand }) => {
                         }}
                     />
                 ));
-            case 2:
-                // EGame
-                return EGame.map((item, index) => (
-                    <img
-                        key={index}
-                        src={item.imageUrl}
-                        alt={item.imageUrl}
-                        className="w-[40%] hover:brightness-150 m-auto pb-[30px] pt-[30px]"
-                        onClick={() => {
-                            navigate(`/EGAME/${item.platform}`, {
-                                replace: true,
-                            });
-                        }}
-                    />
-                ));
-            case 3:
-                // Slots
-                return Slot.map((item, index) => (
-                    <img
-                        key={index}
-                        src={item.imageUrl}
-                        alt={item.imageUrl}
-                        className="w-[40%] hover:brightness-150 m-auto pb-[30px] pt-[30px]"
-                        onClick={() => {
-                            navigate(`/SLOT/${item.platform}`, {
-                                replace: true,
-                            });
-                        }}
-                    />
-                ));
-            case 4:
-                // Fishing Game
-                return FishingGame.map((item, index) => (
-                    <img
-                        key={index}
-                        src={item.imageUrl}
-                        alt={item.imageUrl}
-                        className="w-[40%] hover:brightness-150 m-auto pb-[30px] pt-[30px]"
-                        onClick={() => {
-                            navigate(`/FH/${item.platform}`, { replace: true });
-                        }}
-                    />
-                ));
-            case 5:
-                // Thai Game
-                return Thai.map((item, index) => (
-                    <img
-                        key={index}
-                        src={item.imageUrl}
-                        alt={item.imageUrl}
-                        className="w-[40%] hover:brightness-150 m-auto pb-[30px] pt-[30px]"
-                        onClick={() => {
-                            navigate(`/THAI/${item.platform}`, {
-                                replace: true,
-                            });
-                        }}
-                    />
-                ));
-            case 6:
-                // Table Games
-                return Table.map((item, index) => (
-                    <img
-                        key={index}
-                        src={item.imageUrl}
-                        alt={item.imageUrl}
-                        className="w-[40%] hover:brightness-150 m-auto pb-[30px] pt-[30px]"
-                        onClick={() => {
-                            navigate(`TABLE/${item.platform}`, {
-                                replace: true,
-                            });
-                        }}
-                    />
-                ));
-            case 7:
-                // Live Casino
-                return LiveCasino.map((item, index) => (
-                    <img
-                        key={index}
-                        src={item.imageUrl}
-                        alt={item.imageUrl}
-                        className="w-[40%] hover:brightness-150 m-auto pb-[30px] pt-[30px]"
-                        onClick={() => {
-                            navigate(`/LIVE/${item.platform}`, {
-                                replace: true,
-                            });
-                        }}
-                    />
-                ));
-            // case 8:
-            //     // Lotto
-            //     return Lotto.map((item, index) => (
-            //         <img
-            //             key={index}
-            //             src={item.imageUrl}
-            //             alt={item.imageUrl}
-            //             className="w-[40%] hover:brightness-150 m-auto pb-[30px] pt-[30px]"
-            //             onClick={() => {
-            //                 navigate(`/LOTTO/${item.platform}`, {
-            //                     replace: true,
-            //                 });
-            //             }}
-            //         />
-            //     ));
-            // case 9:
-            //     // Bingo
-            //     return Bingo.map((item, index) => (
-            //         <img
-            //             key={index}
-            //             src={item.imageUrl}
-            //             alt={item.imageUrl}
-            //             className="w-[40%] hover:brightness-150 m-auto pb-[30px] pt-[30px]"
-            //             onClick={() => {
-            //                 navigate(`/BINGO/${item.platform}`, {
-            //                     replace: true,
-            //                 });
-            //             }}
-            //         />
-            //     ));
-            case 8:
-                // Chicken
-                return Chicken.map((item, index) => (
-                    <img
-                        key={index}
-                        src={item.imageUrl}
-                        alt={item.imageUrl}
-                        className="w-[40%] hover:brightness-150 m-auto pb-[30px] pt-[30px]"
-                        onClick={() => {
-                            navigate(`/CHICKEN/${item.platform}`, {
-                                replace: true,
-                            });
-                        }}
-                    />
-                ));
+           
+           
             default:
                 break;
         }
@@ -217,7 +86,7 @@ export const SideIcon = ({ text, type, index, expand }) => {
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                 break;
             case "ContactUs":
-                window.open(CONTACT_US_LINE_APP_INVITE_URL, "_blank");
+                window.open("https://gmail.com", "_blank");
                 break;
             case "FinancialReport":
                 navigate(`/financial-report`, { replace: true });
@@ -239,33 +108,12 @@ export const SideIcon = ({ text, type, index, expand }) => {
                 // navigate(`/${type}/ALL`, { replace: true })
                 // window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
                 switch (type) {
-                    case "SLOT":
+                   
+                    case "ESPORTS":
                         dispatch(setNavBar({ index: 1 }));
                         break;
-                    case "LIVE":
-                        dispatch(setNavBar({ index: 2 }));
-                        break;
-                    case "TABLE":
-                        dispatch(setNavBar({ index: 3 }));
-                        break;
-                    case "ESPORTS":
-                        dispatch(setNavBar({ index: 4 }));
-                        break;
-                    case "EGAME":
-                        dispatch(setNavBar({ index: 5 }));
-                        break;
-                    case "FH":
-                        dispatch(setNavBar({ index: 6 }));
-                        break;
-                    case "THAI":
-                        dispatch(setNavBar({ index: 7 }));
-                        break;
-                    // case "LOTTO":
-                    //     dispatch(setNavBar({ index: 8 }));
-                    //     break;
-                    case "VIRTUAL":
-                        dispatch(setNavBar({ index: 8 }));
-                        break;
+                   
+                   
                     default:
                         dispatch(setNavBar({ index: 0 }));
                         break;
@@ -301,13 +149,7 @@ export const SideIcon = ({ text, type, index, expand }) => {
             >
                 {text}
             </h1>
-            {/* {index > 0 && index < 20 && (
-              <div className={`dropdown-content ${expand ? 'left-[220px] md:left-[265px]' : 'left-[65px]'}`}>
-                <div className='h-full flex flex-col backdrop-blur-sm no-scrollbar overflow-y-scroll'>
-                  { renderContentByIndex(index) }
-                </div>
-              </div>
-            )} */}
+          
         </div>
     );
 };
