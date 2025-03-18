@@ -170,10 +170,14 @@ export const Aside = () => {
             Text: t("Sports"),
             Type: "ESPORTS",
         },
-        // {
-        //     Text: t("EGame"),
-        //     Type: "egame",
-        // },
+        {
+            Text: t("Slots"),
+            Type: "SLOT",
+        },
+        {
+                Text: t("Live"),
+                Type: "LIVE",
+            },
 
         // {
         //     Text: t("Fishing Game"),

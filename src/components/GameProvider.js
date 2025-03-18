@@ -37,6 +37,7 @@ import fnta from "../assets/img/Logo/fanta.png";
 import luckymonaco from "../assets/img/Logo/luckymonaco.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { useNavigate } from "react-router";
+import Autocomplete from './layouts/Autocomplete';
 
 export const GameProvider = (props) => {
     const country=localStorage.getItem("cntry");
@@ -341,13 +342,28 @@ else
        
     ];
 }
+let isSearch=false;
+
+if(localStorage.getItem("provider")!='')
+{
+    isSearch=true;
+}
+else
+{
+    isSearch=false;
+}
+const ProvidersList =['All Providers','Play n GO','Evolution','BigTime Gaming','Octoplay','Ezugi']
 
     return (
         <div className="icons-wrapper md:mt-7 text-white">
-            <div className="top flex items-center justify-center lg:justify-start mt-6 md:mt-0 mb-6">
+            <div className="top flex items-center justify-center  mt-6 md:mt-0 mb-6">
                 <h1 className="flex items-center text-sm md:text-xl text-white font-bold">
                     {t("Providers")}
                 </h1>
+                <div  style={{"width":"40%","color":"black"}}>
+                       <Autocomplete suggestions={ProvidersList} />
+                      
+                    </div>
                 {/* <a className='see-all' href='/'>{t("View All")}</a> */}
             </div>
             <div className="slider-area w-full">
@@ -382,7 +398,9 @@ else
                     }}
                 >
                     
-                    {
+                    
+
+                    {!isSearch &&
                     
                     
                     Providers.map((item, index) => (
@@ -413,7 +431,7 @@ else
                             </div>
                         </SplideSlide>
                     ))}
-                
+                    
                 </Splide>
             </div>
         </div>

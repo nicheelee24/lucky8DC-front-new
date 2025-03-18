@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { setLogoutState } from "../../redux/reducers/loginState";
 import ReactFlagsSelect from "react-flags-select";
 
+import Autocomplete from './Autocomplete';
 
 import search from "../../assets/img/search.svg";
 import * as API from "../../services/api";
@@ -70,6 +71,7 @@ export const Header = () => {
     const [provider, setProviders] = useState("");
 
     const [country, setCountry] = useState(localStorage.getItem("cntry"));
+
     const onCountrySelect = (code) => {setCountry(code);localStorage.setItem("cntry", code);window.location.href='../';};
 
     const handleInputChange = (e) => {
@@ -81,6 +83,8 @@ export const Header = () => {
         "China",
         "Hong Kong"
     ];
+
+    
 
     const handleCountryChange = (e) => {
         setCountry(!checkCountryState);
@@ -189,14 +193,8 @@ export const Header = () => {
                             } logo-mobile`}
                     />
                     {/* <a href='/' className={`text-[32px] font-semibold text-[#FF0000] ml-2  hidden xl:flex ${expandMenuState ? "!hidden" : ""}`}>LuckyGao</a> */}
-                    {/* <div className='input-wrapper ml-3 hidden sm:flex items-center w-72 h-10 hover:border-[#dbe7ff] hover:border-1'>
-                        <input
-                        type='text'
-                        placeholder={t('Search...')}
-                        className='flex-1 outline-none border-none '
-                        />
-                        <img src={search} alt='search' />
-                    </div> */}
+                  
+                    
 
                     {/* <div className='text-white justify-end ml-6 sm:flex hidden'>
                             <RollingNumber />
